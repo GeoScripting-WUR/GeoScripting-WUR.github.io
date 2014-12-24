@@ -1,0 +1,31 @@
+---
+title: 'Geo-Scripting @ Wageningen University'
+author: "Jan Verbesselt and Loïc Dutrieux"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    theme: united
+    toc: yes
+    toc_depth: 4
+    number_sections: true
+---
+
+
+# Lesson overview
+
+## Lesson 1
+
+[Lesson 1: An introduction to the Geo-scripting course and an introduction to R scripting](http://geoscripting-wur.github.io/Scripting4GeoIntro)
+
+## Lesson 2
+
+[Lesson 2: An overview of scripting capabilities to solve common problems of the Geo-Information world](https://geoscripting-wur.github.io/Scripting4Geo/)
+
+## Lesson 3
+
+## Lesson 4
+
+# References and acknowlegments
+
+More info and acknowlegments
+

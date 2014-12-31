@@ -13,6 +13,8 @@ output:
 
 # Lesson overview
 
+[Course planning, dates, topics](https://docs.google.com/document/d/1yTomAgB9Mny-h0ZEd0mhr0nU5_fD5ysZBAvFYqI5Fn4/edit?usp=sharing)
+
 ## Lesson 1
 
 [Lesson 1: An introduction to the Geo-scripting course and an introduction to R scripting](http://geoscripting-wur.github.io/Scripting4GeoIntro)

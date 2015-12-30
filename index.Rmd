@@ -4,7 +4,7 @@ author: "Jan Verbesselt and Loïc Dutrieux"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
-    toc: yes
+    toc: no
     css: custom.css
     theme: united
 ---

@@ -4,20 +4,30 @@ author: "Jan Verbesselt and Loïc Dutrieux"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
-    theme: united
     toc: yes
-    toc_depth: 4
-    number_sections: true
+    css: custom.css
+    theme: united
 ---
 
+# Week 1
 
-# Lesson overview  and information
+## [Lesson 1: Intro to the course and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
+## [Lesson 2: Overview of R for geo](https://geoscripting-wur.github.io/Scripting4Geo/)
+## [Lesson 3: Intro to OS-GEO linux](http://geoscripting-wur.github.io/Intro2Linux)
+## [Lesson 4: Carrying out an R project](http://geoscripting-wur.github.io/RProjectManagement)
+## [Lesson 5: Intro to raster](http://geoscripting-wur.github.io/IntroToRaster)
 
-[Course planning, dates, topics](https://docs.google.com/document/d/1yTomAgB9Mny-h0ZEd0mhr0nU5_fD5ysZBAvFYqI5Fn4/edit?usp=sharing)
+# Week 2
+## [Lesson 6: Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
+## [Lesson 7: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
+## [Lesson 8: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
+## [Lesson 9: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
+## [Lesson 10: Python refresher and project work](http://www.codecademy.com/en/tracks/python)
 
-# References and acknowlegments
-
-The whole R, Python scripting community!
-
-
+# Week 3
+## [Lesson 11: Open source Python scripting (vector)](https://geoscripting-wur.github.io/PythonWeek/)
+## [Lesson 12: Open source Python (raster)](https://geoscripting-wur.github.io/PythonWeek/)
+## [Lesson 13: Python and Arcpy](https://geoscripting-wur.github.io/)
+## [Lesson 14: Web harvesting (Twitter/airbnb..).](https://geoscripting-wur.github.io/)
+## [Lesson 15: Webmapping demo](https://www.nelen-schuurmans.nl/)
 

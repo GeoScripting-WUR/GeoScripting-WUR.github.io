@@ -10,7 +10,20 @@
   background-repeat : no-repeat; 
   background-position: 5px 30px; 
 } 
- 
+
+#logo { 
+  position: fixed; 
+  left: 5px; 
+  top: 0; 
+  padding-top: 100px; 
+  width: 220px; 
+  overflow:auto; 
+  color: #003C5C;  
+  background-image: url("figs/wur-logo.png"); 
+  background-repeat : no-repeat; 
+  background-position: 5px 30px; 
+}
+
 body { 
   font-family: "Calibri", "Verdana", Helvetica, sans-serif; 
   max-width: 800px; 

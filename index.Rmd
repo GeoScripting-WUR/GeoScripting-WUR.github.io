@@ -1,32 +1,35 @@
 ---
-title: 'Geo-Scripting @ Wageningen University'
 author: "Jan Verbesselt and Loïc Dutrieux"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  html_document:
-    toc: no
-    css: custom.css
-    theme: united
+  knitrBootstrap::bootstrap_document:
+    title: "Overview of all the lessons"
+    theme: cosmo
+    menu: FALSE
 ---
+
+# [WUR Geoscripting](https://geoscripting-wur.github.io/) ![WUR logo](http://www.wageningenur.nl/upload/f9a0b5f2-15c5-4b84-9e14-20ef02f5e265_wur-logo.png)
 
 # Week 1
 
-### [Lesson 1: Intro to the course and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
-### [Lesson 2: Overview of R for geo](https://geoscripting-wur.github.io/Scripting4Geo/)
-### [Lesson 3: Intro to OS-GEO linux](http://geoscripting-wur.github.io/Intro2Linux)
-### [Lesson 4: Carrying out an R project](http://geoscripting-wur.github.io/RProjectManagement)
-### [Lesson 5: Intro to raster](http://geoscripting-wur.github.io/IntroToRaster)
+#### [Lesson 1: Intro to the course and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
+#### [Lesson 2: Overview of R for geo](https://geoscripting-wur.github.io/Scripting4Geo/)
+#### [Lesson 3: Intro to OS-GEO linux](http://geoscripting-wur.github.io/Intro2Linux)
+#### [Lesson 4: Carrying out an R project](http://geoscripting-wur.github.io/RProjectManagement)
+#### [Lesson 5: Intro to raster](http://geoscripting-wur.github.io/IntroToRaster)
 
 # Week 2
-### [Lesson 6: Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
-### [Lesson 7: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
-### [Lesson 8: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
-### [Lesson 9: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
-### [Lesson 10: Python refresher and project work](http://www.codecademy.com/en/tracks/python)
+#### [Lesson 6: Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
+#### [Lesson 7: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
+#### [Lesson 8: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
+#### [Lesson 9: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
+#### [Lesson 10: Python refresher and project work](http://www.codecademy.com/en/tracks/python)
 
 # Week 3
-### [Lesson 11: Open source Python scripting (vector)](https://geoscripting-wur.github.io/PythonWeek/)
-### [Lesson 12: Open source Python (raster)](https://geoscripting-wur.github.io/PythonWeek/)
-### [Lesson 13: Python and Arcpy](https://geoscripting-wur.github.io/)
-### [Lesson 14: Web harvesting (Twitter/airbnb..).](https://geoscripting-wur.github.io/)
-### [Lesson 15: Webmapping demo](https://www.nelen-schuurmans.nl/)
+#### [Lesson 11: Open source Python scripting (vector)](https://geoscripting-wur.github.io/PythonWeek/)
+#### [Lesson 12: Open source Python (raster)](https://geoscripting-wur.github.io/PythonWeek/)
+#### [Lesson 13: Python and Arcpy](https://geoscripting-wur.github.io/)
+#### [Lesson 14: Web harvesting (Twitter/airbnb...)](https://geoscripting-wur.github.io/)
+#### [Lesson 15: Webmapping demo](https://www.nelen-schuurmans.nl/)
+
+<!-- comment -->

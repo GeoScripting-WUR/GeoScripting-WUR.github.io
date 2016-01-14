@@ -23,12 +23,12 @@ output:
 #### [Lesson 7: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
 #### [Lesson 8: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
 #### [Lesson 9: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
-#### Lesson 10: Python refresher and project work (see blackboard Course Description and planning)
+#### [Lesson 10: Python refresher and project work](https://geoscripting-wur.github.io/PythonWeek/)
 
 # Week 3
-#### [Lesson 11: Open source Python scripting (vector)](https://geoscripting-wur.github.io/PythonWeek/)
+#### [Lesson 11: Open source Python scripting (vector)](https://geoscripting-wur.github.io/PythonWeek/VectorPython.html)
 #### Lesson 12: Python and Arcpy (see blackboard)
-#### [Lesson 13: Open source Python (raster)](https://geoscripting-wur.github.io/PythonWeek/)
+#### [Lesson 13: Open source Python (raster)](http://nbviewer.ipython.org/github/GeoScripting-WUR/PythonWeek/blob/gh-pages/Raster%20data%20handling.ipynb)
 #### Lesson 14: Web harvesting (Twitter/airbnb...)
 #### [Lesson 15: Webmapping demo](https://www.nelen-schuurmans.nl/)
 

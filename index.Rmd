@@ -23,7 +23,7 @@ output:
 #### [Lesson 7: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
 #### [Lesson 8: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
 #### [Lesson 9: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
-#### [Lesson 10: Python refresher and project work](http://www.codecademy.com/en/tracks/python)
+#### Lesson 10: Python refresher and project work (see blackboard Course Description and planning)
 
 # Week 3
 #### [Lesson 11: Open source Python scripting (vector)](https://geoscripting-wur.github.io/PythonWeek/)

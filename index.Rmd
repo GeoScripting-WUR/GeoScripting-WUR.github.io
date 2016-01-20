@@ -30,6 +30,6 @@ output:
 #### Lesson 12: Python and Arcpy (see blackboard)
 #### [Lesson 13: Open source Python (raster)](http://nbviewer.ipython.org/github/GeoScripting-WUR/PythonWeek/blob/gh-pages/Raster%20data%20handling.ipynb)
 #### [Lesson 14: Web harvesting; dealing with twitter data via Python](http://geoscripting-wur.github.io/PythonWeek/PythonTwitter.html)
-#### [Lesson 15: Webmapping demo](https://www.nelen-schuurmans.nl/)
+#### [Lesson 15: Webmapping demo](nens.html)
 
 

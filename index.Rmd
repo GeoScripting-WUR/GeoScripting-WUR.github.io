@@ -29,7 +29,7 @@ output:
 #### [Lesson 11: Open source Python scripting (vector)](https://geoscripting-wur.github.io/PythonWeek/)
 #### Lesson 12: Python and Arcpy (see blackboard)
 #### [Lesson 13: Open source Python (raster)](https://geoscripting-wur.github.io/PythonWeek/)
-#### Lesson 14: Web harvesting (Twitter/airbnb...)
+#### [Lesson 14: Web harvesting; dealing with twitter data via Python](http://geoscripting-wur.github.io/PythonWeek/PythonTwitter.html)
 #### [Lesson 15: Webmapping demo](https://www.nelen-schuurmans.nl/)
 
 <!-- comment -->

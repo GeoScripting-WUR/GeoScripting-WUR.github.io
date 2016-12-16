@@ -10,6 +10,12 @@ output:
 
 # [WUR Geoscripting](https://geoscripting-wur.github.io/) ![WUR logo](http://www.wageningenur.nl/upload/f9a0b5f2-15c5-4b84-9e14-20ef02f5e265_wur-logo.png)
 
+
+We recommend refreshing your R and Python knowledge before the course with
+
+#### [DataCamp: Interactive learning ](https://www.datacamp.com/) ![DataCamp](logo-slogan.png)
+
+
 # Week 1
 
 #### [Lesson 1: Intro to the course and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)

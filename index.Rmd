@@ -1,5 +1,5 @@
 ---
-author: "Jan Verbesselt and Loïc Dutrieux"
+author: "Jan Verbesselt, Loïc Dutrieux and Dainius Masiliunas"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   knitrBootstrap::bootstrap_document:
@@ -20,8 +20,8 @@ We recommend refreshing your R and Python knowledge before the course with
 
 #### [Lesson 1: Intro to the course and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
 #### [Lesson 2: Overview of R for geo](https://geoscripting-wur.github.io/Scripting4Geo/)
-#### [Lesson 3: Intro to OS-GEO linux](http://geoscripting-wur.github.io/Intro2Linux)
-#### [Lesson 4: Carrying out an R project](http://geoscripting-wur.github.io/RProjectManagement)
+#### [Lesson 3: Carrying out an R project](http://geoscripting-wur.github.io/RProjectManagement)
+#### [Lesson 4: Intro to OS-GEO linux](http://geoscripting-wur.github.io/Intro2Linux)
 #### [Lesson 5: Intro to raster](http://geoscripting-wur.github.io/IntroToRaster)
 
 # Week 2

@@ -19,9 +19,9 @@ We recommend refreshing your R and Python knowledge before the course with
 # Week 1
 
 #### [Lesson 1: Intro to the course and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
-#### [Lesson 2: Overview of R for geo](https://geoscripting-wur.github.io/Scripting4Geo/)
-#### [Lesson 3: Carrying out an R project](http://geoscripting-wur.github.io/RProjectManagement)
-#### [Lesson 4: Intro to OS-GEO linux](http://geoscripting-wur.github.io/Intro2Linux)
+#### [Lesson 2: Overview of R for geoscripting](https://geoscripting-wur.github.io/Scripting4Geo/)
+#### [Lesson 3: Carrying out a scripting project](http://geoscripting-wur.github.io/RProjectManagement)
+#### [Lesson 4: Introduction to Linux](http://geoscripting-wur.github.io/Intro2Linux)
 #### [Lesson 5: Intro to raster](http://geoscripting-wur.github.io/IntroToRaster)
 
 # Week 2

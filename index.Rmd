@@ -4,11 +4,14 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   knitrBootstrap::bootstrap_document:
     title: "Overview of all the lessons"
-    theme: cosmo
+    theme: "simplex"
+    highlight: Tomorrow Night Bright
     menu: FALSE
+    theme.chooser: TRUE
+    highlight.chooser: TRUE
 ---
 
-# [WUR Geoscripting](https://geoscripting-wur.github.io/) ![WUR logo](http://www.wageningenur.nl/upload/f9a0b5f2-15c5-4b84-9e14-20ef02f5e265_wur-logo.png)
+# [WUR Geoscripting](https://geoscripting-wur.github.io/) <img src="http://www.wur.nl/upload/b43b7095-e452-482a-8969-fed9a50393a8_WUR_RGB_standard.png" alt="WUR logo" style="height: 35px;"/>
 
 
 We recommend refreshing your R and Python knowledge before the course with
@@ -27,8 +30,8 @@ We recommend refreshing your R and Python knowledge before the course with
 # Week 2
 #### [Lesson 6: Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
 #### [Lesson 7: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
-#### [Lesson 8: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
-#### [Lesson 9: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
+#### [Lesson 8: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
+#### [Lesson 9: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
 #### [Lesson 10: Python refresher and project work](https://geoscripting-wur.github.io/PythonWeek/)
 
 # Week 3

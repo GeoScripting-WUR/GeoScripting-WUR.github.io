@@ -37,7 +37,7 @@ We recommend refreshing your R and Python knowledge before the course with
 # Week 3
 #### [Lesson 11: Open source Python (vector)](https://geoscripting-wur.github.io/PythonWeek/VectorPython.html)
 #### [Lesson 12: Open source Python (raster)](http://nbviewer.ipython.org/github/GeoScripting-WUR/PythonWeek/blob/gh-pages/Raster%20data%20handling.ipynb)
-#### Lesson 13: Google Earth Engine Intro and Demo
+#### [Lesson 13: Google Earth Engine Intro and Demo](https://geoscripting-wur.github.io/Earth_Engine/)
 #### [Lesson 14: Web harvesting; dealing with twitter data via Python](http://geoscripting-wur.github.io/PythonWeek/PythonTwitter.html)
 <!-- #### [Lesson 15: Webmapping demo](nens.html) -->
 

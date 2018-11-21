@@ -32,13 +32,13 @@ We recommend refreshing your R and Python knowledge before the course with
 #### [Lesson 7: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
 #### [Lesson 8: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
 #### [Lesson 9: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
-#### [Lesson 10: Python refresher and project work](https://geoscripting-wur.github.io/PythonWeek/)
+#### [Lesson 10: Python refresher and project work](https://github.com/GeoScripting-WUR/PythonRefresher/index.html)
 
 # Week 3
-#### [Lesson 11: Open source Python (vector)](https://geoscripting-wur.github.io/PythonWeek/VectorPython.html)
-#### [Lesson 12: Open source Python (raster)](http://nbviewer.ipython.org/github/GeoScripting-WUR/PythonWeek/blob/gh-pages/Raster%20data%20handling.ipynb)
+#### [Lesson 11: Open source Python (vector)](https://github.com/GeoScripting-WUR/PythonVector/VectorPython.html)
+#### [Lesson 12: Open source Python (raster)](https://github.com/GeoScripting-WUR/PythonRaster/RasterPython.html)
 #### [Lesson 13: Google Earth Engine Intro and Demo](https://geoscripting-wur.github.io/Earth_Engine/)
-#### [Lesson 14: Web harvesting; dealing with twitter data via Python](http://geoscripting-wur.github.io/PythonWeek/PythonTwitter.html)
+#### [Lesson 14: Web harvesting; dealing with twitter data via Python](https://github.com/GeoScripting-WUR/PythonTwitter/PythonTwitter.html)
 <!-- #### [Lesson 15: Webmapping demo](nens.html) -->
 
 <br /><br /><br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Geoscripting course material</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

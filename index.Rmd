@@ -26,22 +26,22 @@ We recommend refreshing your R and Python knowledge before the course with
 #### [Lesson 2: Introduction to Linux](http://geoscripting-wur.github.io/Intro2Linux)
 #### [Lesson 3: Intro to functions and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
 #### [Lesson 4: Intro to raster](http://geoscripting-wur.github.io/IntroToRaster)
-#### Lesson 5: Assignment of Week 1
+#### Assignment of Week 1
 <!--#### [Lesson 2: Overview of R for geoscripting](https://geoscripting-wur.github.io/Scripting4Geo/)-->'
 
 # Week 2
-#### [Lesson 6: Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
-#### [Lesson 7: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
-#### [Lesson 8: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
-#### [Lesson 9: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
-#### Lesson 10: Assignment of Week 2
+#### [Lesson 5: Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
+#### [Lesson 6: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
+#### [Lesson 7: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
+#### [Lesson 8: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
+#### Assignment of Week 2
 
 # Week 3
-#### [Lesson 11: Python refresher and project work](https://geoscripting-wur.github.io/PythonRefresher/)
-#### [Lesson 12: Open source Python (vector)](https://geoscripting-wur.github.io/PythonVector/)
-#### [Lesson 13: Open source Python (raster)](https://geoscripting-wur.github.io/PythonRaster/)
-#### Lesson 14: Assignment of Week 3
-#### [Lesson 15: Google Earth Engine Intro and Demo](https://geoscripting-wur.github.io/Earth_Engine/)
+#### [Lesson 9: Python refresher and project work](https://geoscripting-wur.github.io/PythonRefresher/)
+#### [Lesson 10: Open source Python (vector)](https://geoscripting-wur.github.io/PythonVector/)
+#### [Lesson 11: Open source Python (raster)](https://geoscripting-wur.github.io/PythonRaster/)
+#### Assignment of Week 3
+#### [Lesson 12: Google Earth Engine Intro and Demo](https://geoscripting-wur.github.io/Earth_Engine/)
 <!-- #### [Lesson 14: Web harvesting; dealing with twitter data via Python](https://geoscripting-wur.github.io/PythonTwitter/) -->
 <!-- #### [Lesson 15: Webmapping demo](nens.html) -->
 

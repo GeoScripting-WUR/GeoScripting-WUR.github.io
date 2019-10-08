@@ -1,9 +1,9 @@
 ---
 author: "Jan Verbesselt, Loïc Dutrieux and Dainius Masiliunas"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
+pagetitle: "WUR Geoscripting course"
 output:
   knitrBootstrap::bootstrap_document:
-    title: "Overview of all the lessons"
     theme: "simplex"
     highlight: Tomorrow Night Bright
     menu: FALSE

@@ -1,5 +1,5 @@
 ---
-author: "Jan Verbesselt, Loïc Dutrieux and Dainius Masiliunas"
+author: "Jan Verbesselt and Dainius Masiliunas"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 pagetitle: "WUR Geoscripting course"
 output:

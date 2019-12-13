@@ -12,12 +12,12 @@ output:
 ---
 # Exercise guide
 
-Each morning tutorial is followed by an exercise in the afternoon. These daily exercises are made available each day on the [geoscripting-innovation organization](https://github.com/geoscripting-innovation). This manual shows you how to obtain the repository, how to work on the exercise together with your teammate and how to submit and review other exercises.
+Each morning tutorial is followed by an exercise in the afternoon. These daily exercises are made available each day on the [geoscripting-2020 organization](https://github.com/geoscripting-2020). This manual shows you how to obtain the repository, how to work on the exercise together with your teammate and how to submit and review other exercises.
 
 ## 1. Fork
 First you need to *fork* the exercise repository. For an explanation of forking, see the [tutorial of lesson 1](http://geoscripting-wur.github.io/RProjectManagement/). 
 
-- Go to the [geoscripting-innovation organization](https://github.com/geoscripting-innovation), and make sure your Github account is signed in and added to the organization
+- Go to the [geoscripting-2020 organization](https://github.com/geoscripting-2020), and make sure your Github account is signed in and added to the organization
 
 - Look for the repository named 'Exercise#-starter', where # is the lesson number of the day
 
@@ -42,7 +42,7 @@ Now you have your own version of the exercise repository, which you can clone to
 
 ## 3. Submit and review
 
-Before the deadline, you submit your solution of the exercise via a *pull request*. Your exercise, and all exercises of the other teams, are then visible in the original repository on the [geoscripting-innovation organization](https://github.com/geoscripting-innovation) under *pull requests*. Here you can review other teams.
+Before the deadline, you submit your solution of the exercise via a *pull request*. Your exercise, and all exercises of the other teams, are then visible in the original repository on the [geoscripting-2020 organization](https://github.com/geoscripting-2020) under *pull requests*. Here you can review other teams.
 
 - Push your final commits to your exercise repository
 
@@ -56,6 +56,6 @@ Before the deadline, you submit your solution of the exercise via a *pull reques
 
 ![Add team member](https://github.com/PTOoster/Exercise-Guide/blob/master/images/pull_request.png?raw=true)
 
-- Go to the [geoscripting-innovation organization](https://github.com/geoscripting-innovation). Under the tab *pull requests* you can now see the exercise repositories of all teams. To review, leave a comment under the pull request
+- Go to the [geoscripting-2020 organization](https://github.com/geoscripting-2020). Under the tab *pull requests* you can now see the exercise repositories of all teams. To review, leave a comment under the pull request
 
 ![Add team member](https://github.com/PTOoster/Exercise-Guide/blob/master/images/review.png?raw=true)

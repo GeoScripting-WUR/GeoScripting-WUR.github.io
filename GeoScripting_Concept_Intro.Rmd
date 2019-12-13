@@ -1,0 +1,251 @@
+---
+title: "Geo-scripting"
+author: "Jan Verbesselt"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  ioslides_presentation:
+    footer: "Geo-scripting 2020"
+---
+
+<!--
+add explanation on evaluation criteria - rubrics - evaluation and feedback system
+add explanation on "reproducible example"
+add explanation on test exam
+-->
+
+## Did you know?!
+
+Scripting can be used to process satellite data easily to monitor deforestation globally
+
+- Google Earth Engine for global deforestation monitoring
+      - https://earthengine.google.org/#intro
+
+![](figs/forest-cover-global.png)
+
+Image Credit: NASA Goddard, based on data from Hansen et al., 2013.
+
+## Why geo-scripting?
+
+![](figs/solve-cool-problems.png)
+
+## Why geo-scripting?
+
+- Reproducible: you keep track of what you have done 
+
+- Efficient: you can write a script to do something and repeat your analysis x1000... 
+
+-	Good for finding errors
+
+Can you think of other advantages?
+
+## Why geo-scripting?
+
+-  Enable collaboration
+    - a huge social R and Python community
+    
+![](figs/facebook.png)
+
+## Why geo-scripting?
+
+- Build your own tools and functions (e.g. automated web-processing, etc.)
+
+![](figs/16199604.jpg)
+
+[See Lesson 2 demo's!](https://geoscripting-wur.github.io/Scripting4Geo/#why-scripting)
+
+## Geo-scripting learning objectives
+
+- Read, write, and visualize spatial data using a script
+- Find and use  functions for geo-data handling
+- Know how to find help
+    - Write a clear and reproducible script
+    - Learn how to help each other
+- Apply learned concepts for your own geo-challenge
+
+<!--
+```{block type="alert alert-info"}
+
+```
+-->
+
+## The geo-scripting course
+
+Goal:
+
+- Scripting to solve spatial challenges!
+- **Learn by doing**
+- **Learn how to keep on learning**
+
+
+A team of `R` & `Python` experts who use geo-scripting languages 
+every day helped to develop this course
+
+## Course concept
+
+Flipped Classroom concept:
+
+![](figs/flipping-the-classroom.jpg)
+
+* Experts from companies, research institutes and 
+university will present (guest lectures)
+
+## Course concept
+
+Day planning See our course guide.
+See also Brightspace
+
+- Dayly automatically evaluated Exercises!
+
+## Team work & helping each other
+
+- Teams of two:
+
+- select the team (2 persons, e.g. 1st with 2nd year MGI ) and fill in the form (see blackboard)
+
+- Other teams can be selected for the project work
+
+<div class="centered">
+![](figs/teamwork.jpeg)
+</div>
+
+## Team work & helping each other
+
+- Microsoft teams question and answer Forum
+
+- Microsoft team - Staff announcements
+
+
+## Scoring
+
+- 3 weekly assignments - 30%
+- Questions & Answers support and activity - 10%
+- Project - 60%
+
+Details -see the course guide!
+
+## Individual assessment
+
+- Question and answer forum
+- DataCamp website: challenges
+    - Free access to all courses for 6 months
+   
+- Script reviewing can be done on an individual basis both team member need to
+equally use Git
+
+## Learning outcomes of today:
+
+- Refreshing and assessing R scripting skills to see if you can continue with the course
+- Able to write a function
+- Know how to visualize a spatial map in R
+
+*Socrative Quiz at the end of this presentation!*
+    
+## What  is a scripting language?
+
+- A scripting language can interpret and automate the execution of tasks, instead of clicking!!!
+- A scripting language is the glue, between different commands, functions, and objectives without the need to compile it for each OS (e.g. windows)
+- This is different from like C/C++/Fortran 
+    - these are languages that need to be compiled first.
+
+## Compiling
+
+Passing the source code through a compiler, which translates the `high-level language` instructions into an `exe`.
+
+```{r, echo=FALSE, fig.align='center', fig.width=6, strip.white=TRUE}
+library(png)
+library(grid)
+img <- readPNG("figs/traditionalCompiler.png")
+grid.raster(img)
+```
+
+## The main scripting languages for GIS and Remote sensing currently are: 
+
+- R
+- Python
+- GRASS (grass function are included in QGIS)
+- JavaScript for geoweb scripting
+- Matlab
+- IDL (ENVI)
+- ...
+
+## Python versus R
+
+- Python is a general purpose programming language
+- R is particularly strong in statistical computing and graphics
+- Syntactic differences between R and Python can be confusing  
+- There are many R and Python packages for spatial analyses
+
+![](figs/RPythonS.png)
+
+## R packages
+![](figs/worldcloudRpackage.png)
+
+## Many programs have support for
+
+ Python & R e.g.:
+ 
+ - QGIS
+ - GRASS
+ - PostGIS
+
+## Challenge
+
+Login to socrative: http://www.socrative.com
+
+Room: GEOSCRIPTING
+
+Quiz: Geo-scripting intro
+
+## Time for R action!
+
+- Linux
+- Git
+- What is a "reproducible script"?
+
+## Reproducibility
+
+![](figs/rep_sci_cover.png)
+
+## Rubric
+
+[Rubric](https://docs.google.com/document/d/1wdqcrqh4Bt-tNwhEFRa4esq7ozwo36tfOjGmbBTK5B4/edit?usp=sharing)
+
+## Tomorrow morning
+
+- Provide feedback
+- Lesson 2
+    - an overview of what is possible with scripting
+    - no need to understand the code: lesson 2 is a demonstration lesson!
+
+[See Lesson 2 demo's!](https://geoscripting-wur.github.io/Scripting4Geo/#why-scripting)
+
+<!--
+```{r, fig.align='center', echo=FALSE, message=FALSE, eval=FALSE}
+if (!file.exists(fn <- "figs/worldcloudRpackage.png")) {
+    fn <- "figs/worldcloudRpackage.png"
+    require(XML)
+    require(tm)
+    require(wordcloud)
+    require(RColorBrewer)
+    u = "http://cran.r-project.org/web/packages/available_packages_by_date.html"
+    t = readHTMLTable(u)[[1]]
+    ap.corpus <- Corpus(DataframeSource(data.frame(as.character(t[,3]))))
+    ap.corpus <- tm_map(ap.corpus, removePunctuation)
+    # ap.corpus <- tm_map(ap.corpus, tolower)
+    #  txt.corpus <- tm_map(txt.corpus, tolower)
+    # must be changed to
+    ap.corpus <- tm_map(ap.corpus, content_transformer(tolower))
+    ap.corpus <- tm_map(ap.corpus, function(x) removeWords(x, stopwords("english")))
+    ap.tdm <- TermDocumentMatrix(ap.corpus)
+    ap.m <- as.matrix(ap.tdm)
+    ap.v <- sort(rowSums(ap.m),decreasing=TRUE)
+    ap.d <- data.frame(word = names(ap.v),freq=ap.v)
+    table(ap.d$freq)
+    pal2 <- brewer.pal(8,"Dark2")
+    png(fn, width=1280, height=800)
+    wordcloud(ap.d$word,ap.d$freq, scale=c(8,.2),min.freq=3,
+    max.words=Inf, random.order=FALSE, rot.per=.15, colors=pal2)
+    dev.off()    
+}
+```
+-->

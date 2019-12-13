@@ -51,7 +51,7 @@ Can you think of other advantages?
 
 ![](figs/16199604.jpg)
 
-[See Lesson 2 demo's!](https://geoscripting-wur.github.io/Scripting4Geo/#why-scripting)
+[See demo's!](https://geoscripting-wur.github.io/Scripting4Geo/#why-scripting)
 
 ## Geo-scripting learning objectives
 
@@ -91,52 +91,30 @@ university will present (guest lectures)
 
 ## Course concept
 
-Day planning See our course guide.
-See also Brightspace
+See Brightspace:
 
-- Dayly automatically evaluated Exercises!
+- Daily planning
+- Scoring
+- Submission of exercises and assignments
 
 ## Team work & helping each other
 
+See Microsoft teams!
+
 - Teams of two:
-
-- select the team (2 persons, e.g. 1st with 2nd year MGI ) and fill in the form (see blackboard)
-
+- select the team and fill in the form (Git repository)
 - Other teams can be selected for the project work
 
 <div class="centered">
 ![](figs/teamwork.jpeg)
 </div>
 
-## Team work & helping each other
-
-- Microsoft teams question and answer Forum
-
-- Microsoft team - Staff announcements
-
-
-## Scoring
-
-- 3 weekly assignments - 30%
-- Questions & Answers support and activity - 10%
-- Project - 60%
-
-Details -see the course guide!
-
-## Individual assessment
-
-- Question and answer forum
-- DataCamp website: challenges
-    - Free access to all courses for 6 months
-   
-- Script reviewing can be done on an individual basis both team member need to
-equally use Git
 
 ## Learning outcomes of today:
 
-- Refreshing and assessing R scripting skills to see if you can continue with the course
+- Getting started with Linux, Git, Refresh R scripting skills
 - Able to write a function
-- Know how to visualize a spatial map in R
+- Submit an exercise that will be automatically evaluated!
 
 *Socrative Quiz at the end of this presentation!*
     
@@ -206,18 +184,13 @@ Quiz: Geo-scripting intro
 
 ![](figs/rep_sci_cover.png)
 
-## Rubric
+<!-- ## Rubric -->
 
-[Rubric](https://docs.google.com/document/d/1wdqcrqh4Bt-tNwhEFRa4esq7ozwo36tfOjGmbBTK5B4/edit?usp=sharing)
+<!-- [Rubric](https://docs.google.com/document/d/1wdqcrqh4Bt-tNwhEFRa4esq7ozwo36tfOjGmbBTK5B4/edit?usp=sharing) -->
 
-## Tomorrow morning
+## Tomorrow 
 
-- Provide feedback
-- Lesson 2
-    - an overview of what is possible with scripting
-    - no need to understand the code: lesson 2 is a demonstration lesson!
-
-[See Lesson 2 demo's!](https://geoscripting-wur.github.io/Scripting4Geo/#why-scripting)
+See course guide!
 
 <!--
 ```{r, fig.align='center', echo=FALSE, message=FALSE, eval=FALSE}

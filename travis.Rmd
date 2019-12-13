@@ -1,0 +1,146 @@
+---
+author: "Thomas Oosterhuis and Dainius Masiliunas"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+pagetitle: "Guide to continuous integration and Travis CI"
+output:
+  knitrBootstrap::bootstrap_document:
+    theme: "simplex"
+    highlight: Tomorrow Night Bright
+    menu: FALSE
+    theme.chooser: TRUE
+    highlight.chooser: TRUE
+---
+# An introduction to continuous integration with Travis CI
+
+This primer introduces the concepts of continuous integration and shows how Travis CI can be used to implement it. The first paragraphs are a conceptual and theoretical overview of CI and Travis. Don't worry if this is too abstract for you: the last part of this introduction is an example on the practical use of Travis CI, which is most important. The concepts will become clear after a bit of practice.
+
+![Travis](https://travis-ci.com/images/logos/TravisCI-Mascot-1.png)
+
+## What is continuous integration?
+
+*Continuous integration* (CI) is a process in software development where code is frequently *tested* and *built*. Changes to the code are usually made over time by different people. With CI, all changes are integrated to see if they result in errors or inconsistencies. CI is often linked to version control systems, such as Git, where a build is triggered each time changes are pushed to the main repository. CI uses automated *unit tests* to check whether code produces the expected output. CI can also be used for quality control, by checking whether the documentation of a piece of code is sufficient. 
+
+## Why use continuous integration?
+
+Because of the continuous integration and testing of changes in code, errors can be identified early in the development process. It tackles complex integration issues because of frequent testing. If errors arise with changes, the source is easier to identify. Especially for large amounts of code with many collaborators, CI is a vital part of the software development process. This way you can focus on writing code, and not worry about testing every new piece. If an error arises in your new code, the CI system reports this to you.
+
+## What is Travis CI?
+
+[Travis CI](https://travis-ci.com "Travis' homepage") is a *cloud-based service for continuous integration*, which can be used for projects hosted on GitHub. When you push new commits to your repository, Travis automatically triggers a build. This is the process of cloning your repository to their server, carrying out a number of tasks and pre-defined tests. If any of the tasks or tests fail, the build is *broken*. If no errors arise, the build is *passed*. 
+
+## Travis terminology
+
+- phase - the sequential steps of a job. For example, the install phase, comes before the script phase, which comes before the optional deploy phase.
+- job - an automated process that clones your repository into a virtual environment and then carries out a series of phases such as compiling your code, running tests, etc. A job fails if the return code of the script phase is non zero.
+- build - a group of jobs. For example, a build might have two jobs, each of which tests a project with a different version of a programming language. A build finishes when all of its jobs are finished. If any job fails, the build is broken.
+
+## How does Travis CI work?
+
+As explained, Travis works through GitHub. If you have a GitHub account, Travis needs to be authorized to access your repositories the first time you use it (see their ['getting started'](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci) section). Then, you need to activate Travis for the desired repositories, and a build will be triggered each time you commit to that repository.
+
+To tell Travis what to do, you need to *define a build*. A build can consist of multiple *jobs* with multiple *phases*. This is defined in a YAML file, named `.travis.yml`, which should be placed in your repository. The `.travis.yml` can be seen as the instructions for Travis, which specifies the operating system of the testing environment, the programming language, the test files to run and dependencies to install. 
+
+After your build is finished, you will receive a notification of Travis, either via e-mail, GitHub, Slack or any other specified channel.
+
+To summarize the workflow of Travis CI:
+
+1. On your local device you make changes to your code, and you define tests in a test file.
+2. You push your changes to your GitHub repository, which contains a .travis.yml file.
+3. A build will be triggered by Travis CI. A virtual machine is booted and the jobs specified in the `.travis.yml` file are executed.
+4. After finishing, Travis sends a notification to you with the status of the build (broken or passed). You can view the output of the jobs in the logs at https://travis-ci.com/.
+
+![Travis CI](http://mahugh.com/wp-content/uploads/2016/09/travis-ci03.png)
+
+## The .travis.yml file structure
+Let us look at a simple example of a `.travis.yml` file. Suppose you have a GitHub repository with some R code, which uses the package `ggplot2`. The repository contains a test folder with a script `test.R` with unit tests that check your main code. To let Travis CI run the tests automatically, the `.travis.yml` file looks like this:
+
+<pre>
+   language: r
+   
+   os:
+    - linux
+    
+   install:
+    - Rscript -e 'install.packages("ggplot2")' 
+    
+   script:
+    - Rscript ./test/test.R
+</pre>
+  
+  - Under `language` you identify the programming language of the job.
+  - The `os` is linux in this case. The virtual machine that Travis uses for this build is a linux operating system. If your code needs to work on several os, more can be added.
+  - The `install` phase is executed before running the tests. Here you define any dependencies of your script, such as packages.
+  - The `script` phase is where you define your scripts that you want to execute.
+  
+The options to customize builds are numerous, and can be found in the [Travis CI docs](https://docs.travis-ci.com/user/customizing-the-build/). For R packages, you can also add a `DESCRIPTION` file. This file contains meta-data about your package such as name and authors. Any required libraries can also be listed here under `imports`, which will be installed automatically by Travis. For information about the `DESCRIPTION` file, see [this guide](http://r-pkgs.had.co.nz/description.html).
+
+  
+## Example
+For an example of a Travis CI implementation with a `.travis.yaml` file and tests, see [this repository](https://github.com/PTOoster/Continuous-feedback-demo). To see whether your build is broken or passed after you pushed your changes to GitHub, you go to your GitHub repository and click on *commits*.
+
+![commit button](https://github.com/PTOoster/Continuous-integration/blob/master/images/commit_button.png?raw=true)
+
+In the list of commits, you either see a red cross (fail) or green check mark (pass) for each commit. when you click on the sign, a window from Travis pops up specifying the status of the build. Then, click on *details* to view the result of each job.
+
+![commit details](https://github.com/PTOoster/Continuous-integration/blob/master/images/commit_details.png?raw=true)
+
+You now have an overview of the build. Here you can see that both jobs failed. To inspect the output log of the virtual machine of Travis, click on the job you would like to inspect. 
+
+![Job overview](https://github.com/PTOoster/Continuous-integration/blob/master/images/job_overview.png?raw=true)
+
+This redirects you to the [Travis website](https://travis-ci.com/). The Travis interface contains:
+
+1. status of the build
+
+2. the build configuration, which is the `.travis.yaml` file
+
+3. the job log, which contains information on failed tests and errors
+
+4. the OS, name of the job and programming language, as dictated by the `yaml` file
+
+5. clicking on build gives you an overview of all the jobs of the build
+
+6. build history gives an overview of all past builds and their status
+
+![Travis interface](https://github.com/PTOoster/Continuous-integration/blob/master/images/interface.png?raw=true)
+
+In this case, the job log tells you that there was one true leap year wrongly identified as not a leap year. It also shows that a warning was expected for the input of year 1400, but not given. Now you know which issues to fix in order to pass all tests.
+
+![job log](https://github.com/PTOoster/Continuous-integration/blob/master/images/job_log.png?raw=true)
+
+
+## Remarks
+- If one job fails, the entire build will fail. Inspect the details of a build to see which tests have not passed, or which errors occured
+- The job log can be accessed either as showed in above example, or by going to https://travis-ci.com/ directly
+
+# Build notifications in MS Teams
+
+You will receive an email from Travis about the status of your build. In your `.travis.yml` file you can also specify other channels to receive build notifications. One useful thing to do is to enable notifications in MS Teams!
+
+To do that:
+
+1. Go to your group's private channel on MS Teams. (Please make sure you're doing that in a separate channel so as not to spam the main channels with irrelevant notifications.)
+2. Press the "..." button of the channel and select *Connectors*
+3. Press the *Configure* button next to *Travis CI*
+4. Enter the name of your team and press *Create*
+5. Copy the webhook URL
+6. Edit your `.travis.yml` file and at the bottom add (like in Python, **whitespace is important**):
+```yaml
+notifications:
+  webhooks: https://outlook.office.com/webhook/...long_code_that_you_just_copied...
+```
+7. Commit and push. The Travis bot will now post notifications to your channel.
+8. When you use other repositories, you can reuse the same webhook; just continue from step 6.
+
+## References and further reading
+
+[https://docs.travis-ci.com](https://docs.travis-ci.com)
+
+[https://github.com/dwyl/learn-travis](https://github.com/dwyl/learn-travis)
+
+[http://mahugh.com/2016/09/02/travis-ci-for-test-automation/#prettyPhoto](http://mahugh.com/2016/09/02/travis-ci-for-test-automation/#prettyPhoto)
+
+[http://r-pkgs.had.co.nz/description.html](http://r-pkgs.had.co.nz/description.html)
+
+
+

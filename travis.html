@@ -5,12 +5,76 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Thomas Oosterhuis and Dainius Masiliunas" />
-  <title>Exercise submission guide</title>
+  <title>Guide to continuous integration and Travis CI</title>
   <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -874,41 +938,100 @@
 <div class="container">
 <div class="row row-offcanvas row-offcanvas-right">
 <div class="contents col-xs-12 col-md-10">
-<h1 id="exercise-guide">Exercise guide</h1>
-<p>Each morning tutorial is followed by an exercise in the afternoon. These daily exercises are made available each day on the <a href="https://github.com/geoscripting-2020">geoscripting-2020 organization</a>. This manual shows you how to obtain the repository, how to work on the exercise together with your teammate and how to submit and review other exercises.</p>
-<h2 id="fork">1. Fork</h2>
-<p>First you need to <em>fork</em> the exercise repository. For an explanation of forking, see the <a href="http://geoscripting-wur.github.io/RProjectManagement/">tutorial of lesson 1</a>.</p>
+<h1 id="an-introduction-to-continuous-integration-with-travis-ci">An introduction to continuous integration with Travis CI</h1>
+<p>This primer introduces the concepts of continuous integration and shows how Travis CI can be used to implement it. The first paragraphs are a conceptual and theoretical overview of CI and Travis. Don’t worry if this is too abstract for you: the last part of this introduction is an example on the practical use of Travis CI, which is most important. The concepts will become clear after a bit of practice.</p>
+<p><img src="https://travis-ci.com/images/logos/TravisCI-Mascot-1.png" alt="Travis" /></p>
+<h2 id="what-is-continuous-integration">What is continuous integration?</h2>
+<p><em>Continuous integration</em> (CI) is a process in software development where code is frequently <em>tested</em> and <em>built</em>. Changes to the code are usually made over time by different people. With CI, all changes are integrated to see if they result in errors or inconsistencies. CI is often linked to version control systems, such as Git, where a build is triggered each time changes are pushed to the main repository. CI uses automated <em>unit tests</em> to check whether code produces the expected output. CI can also be used for quality control, by checking whether the documentation of a piece of code is sufficient.</p>
+<h2 id="why-use-continuous-integration">Why use continuous integration?</h2>
+<p>Because of the continuous integration and testing of changes in code, errors can be identified early in the development process. It tackles complex integration issues because of frequent testing. If errors arise with changes, the source is easier to identify. Especially for large amounts of code with many collaborators, CI is a vital part of the software development process. This way you can focus on writing code, and not worry about testing every new piece. If an error arises in your new code, the CI system reports this to you.</p>
+<h2 id="what-is-travis-ci">What is Travis CI?</h2>
+<p><a href="https://travis-ci.com" title="Travis&#39; homepage">Travis CI</a> is a <em>cloud-based service for continuous integration</em>, which can be used for projects hosted on GitHub. When you push new commits to your repository, Travis automatically triggers a build. This is the process of cloning your repository to their server, carrying out a number of tasks and pre-defined tests. If any of the tasks or tests fail, the build is <em>broken</em>. If no errors arise, the build is <em>passed</em>.</p>
+<h2 id="travis-terminology">Travis terminology</h2>
 <ul>
-<li><p>Go to the <a href="https://github.com/geoscripting-2020">geoscripting-2020 organization</a>, and make sure your Github account is signed in and added to the organization</p></li>
-<li><p>Look for the repository named ‘Exercise#-starter’, where # is the lesson number of the day</p></li>
-<li><p>Open the repository by clicking on the name. Then, fork the repository by clicking on the <em>fork</em> button at the right-top of your screen</p></li>
+<li>phase - the sequential steps of a job. For example, the install phase, comes before the script phase, which comes before the optional deploy phase.</li>
+<li>job - an automated process that clones your repository into a virtual environment and then carries out a series of phases such as compiling your code, running tests, etc. A job fails if the return code of the script phase is non zero.</li>
+<li>build - a group of jobs. For example, a build might have two jobs, each of which tests a project with a different version of a programming language. A build finishes when all of its jobs are finished. If any job fails, the build is broken.</li>
 </ul>
-<p><img src="https://github.com/PTOoster/Exercise-Guide/blob/master/images/fork_button.png?raw=true" alt="fork button" /></p>
-<h2 id="add-teammate-and-clone">2. Add teammate and clone</h2>
-<p>Now you have your own version of the exercise repository, which you can clone to do the exercise on your computer. First you need to add your team member as collaborator to the repository.</p>
+<h2 id="how-does-travis-ci-work">How does Travis CI work?</h2>
+<p>As explained, Travis works through GitHub. If you have a GitHub account, Travis needs to be authorized to access your repositories the first time you use it (see their <a href="https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci">‘getting started’</a> section). Then, you need to activate Travis for the desired repositories, and a build will be triggered each time you commit to that repository.</p>
+<p>To tell Travis what to do, you need to <em>define a build</em>. A build can consist of multiple <em>jobs</em> with multiple <em>phases</em>. This is defined in a YAML file, named <code>.travis.yml</code>, which should be placed in your repository. The <code>.travis.yml</code> can be seen as the instructions for Travis, which specifies the operating system of the testing environment, the programming language, the test files to run and dependencies to install.</p>
+<p>After your build is finished, you will receive a notification of Travis, either via e-mail, GitHub, Slack or any other specified channel.</p>
+<p>To summarize the workflow of Travis CI:</p>
+<ol type="1">
+<li>On your local device you make changes to your code, and you define tests in a test file.</li>
+<li>You push your changes to your GitHub repository, which contains a .travis.yml file.</li>
+<li>A build will be triggered by Travis CI. A virtual machine is booted and the jobs specified in the <code>.travis.yml</code> file are executed.</li>
+<li>After finishing, Travis sends a notification to you with the status of the build (broken or passed). You can view the output of the jobs in the logs at https://travis-ci.com/.</li>
+</ol>
+<p><img src="http://mahugh.com/wp-content/uploads/2016/09/travis-ci03.png" alt="Travis CI" /></p>
+<h2 id="the-.travis.yml-file-structure">The .travis.yml file structure</h2>
+<p>Let us look at a simple example of a <code>.travis.yml</code> file. Suppose you have a GitHub repository with some R code, which uses the package <code>ggplot2</code>. The repository contains a test folder with a script <code>test.R</code> with unit tests that check your main code. To let Travis CI run the tests automatically, the <code>.travis.yml</code> file looks like this:</p>
+<pre>
+   language: r
+   
+   os:
+    - linux
+    
+   install:
+    - Rscript -e 'install.packages("ggplot2")' 
+    
+   script:
+    - Rscript ./test/test.R
+</pre>
 <ul>
-<li><p>Go to settings, and click on <em>collaborators</em> in the menu on the left</p></li>
-<li><p>Add your team member by filling out their Github account name</p></li>
-<li><p>Clone the exercise (check the <a href="http://geoscripting-wur.github.io/RProjectManagement/">tutorial of lesson 1</a>)</p></li>
-<li><p>Work on the exercise and use Travis CI for feedback (check the Travis CI introduction)</p></li>
+<li>Under <code>language</code> you identify the programming language of the job.</li>
+<li>The <code>os</code> is linux in this case. The virtual machine that Travis uses for this build is a linux operating system. If your code needs to work on several os, more can be added.</li>
+<li>The <code>install</code> phase is executed before running the tests. Here you define any dependencies of your script, such as packages.</li>
+<li>The <code>script</code> phase is where you define your scripts that you want to execute.</li>
 </ul>
-<p><img src="https://github.com/PTOoster/Exercise-Guide/blob/master/images/team_member.png?raw=true" alt="Add team member" /></p>
-<h2 id="submit-and-review">3. Submit and review</h2>
-<p>Before the deadline, you submit your solution of the exercise via a <em>pull request</em>. Your exercise, and all exercises of the other teams, are then visible in the original repository on the <a href="https://github.com/geoscripting-2020">geoscripting-2020 organization</a> under <em>pull requests</em>. Here you can review other teams.</p>
+<p>The options to customize builds are numerous, and can be found in the <a href="https://docs.travis-ci.com/user/customizing-the-build/">Travis CI docs</a>. For R packages, you can also add a <code>DESCRIPTION</code> file. This file contains meta-data about your package such as name and authors. Any required libraries can also be listed here under <code>imports</code>, which will be installed automatically by Travis. For information about the <code>DESCRIPTION</code> file, see <a href="http://r-pkgs.had.co.nz/description.html">this guide</a>.</p>
+<h2 id="example">Example</h2>
+<p>For an example of a Travis CI implementation with a <code>.travis.yaml</code> file and tests, see <a href="https://github.com/PTOoster/Continuous-feedback-demo">this repository</a>. To see whether your build is broken or passed after you pushed your changes to GitHub, you go to your GitHub repository and click on <em>commits</em>.</p>
+<p><img src="https://github.com/PTOoster/Continuous-integration/blob/master/images/commit_button.png?raw=true" alt="commit button" /></p>
+<p>In the list of commits, you either see a red cross (fail) or green check mark (pass) for each commit. when you click on the sign, a window from Travis pops up specifying the status of the build. Then, click on <em>details</em> to view the result of each job.</p>
+<p><img src="https://github.com/PTOoster/Continuous-integration/blob/master/images/commit_details.png?raw=true" alt="commit details" /></p>
+<p>You now have an overview of the build. Here you can see that both jobs failed. To inspect the output log of the virtual machine of Travis, click on the job you would like to inspect.</p>
+<p><img src="https://github.com/PTOoster/Continuous-integration/blob/master/images/job_overview.png?raw=true" alt="Job overview" /></p>
+<p>This redirects you to the <a href="https://travis-ci.com/">Travis website</a>. The Travis interface contains:</p>
+<ol type="1">
+<li><p>status of the build</p></li>
+<li><p>the build configuration, which is the <code>.travis.yaml</code> file</p></li>
+<li><p>the job log, which contains information on failed tests and errors</p></li>
+<li><p>the OS, name of the job and programming language, as dictated by the <code>yaml</code> file</p></li>
+<li><p>clicking on build gives you an overview of all the jobs of the build</p></li>
+<li><p>build history gives an overview of all past builds and their status</p></li>
+</ol>
+<p><img src="https://github.com/PTOoster/Continuous-integration/blob/master/images/interface.png?raw=true" alt="Travis interface" /></p>
+<p>In this case, the job log tells you that there was one true leap year wrongly identified as not a leap year. It also shows that a warning was expected for the input of year 1400, but not given. Now you know which issues to fix in order to pass all tests.</p>
+<p><img src="https://github.com/PTOoster/Continuous-integration/blob/master/images/job_log.png?raw=true" alt="job log" /></p>
+<h2 id="remarks">Remarks</h2>
 <ul>
-<li><p>Push your final commits to your exercise repository</p></li>
-<li><p>Go to your repository on Github and click on <em>new pull request</em></p></li>
+<li>If one job fails, the entire build will fail. Inspect the details of a build to see which tests have not passed, or which errors occured</li>
+<li>The job log can be accessed either as showed in above example, or by going to https://travis-ci.com/ directly</li>
 </ul>
-<p><img src="https://github.com/PTOoster/Exercise-Guide/blob/master/images/pull_button.png?raw=true" alt="pull request" /></p>
-<ul>
-<li><p>Click on the button <em>create pull request</em></p></li>
-<li><p>As subject of the pull request, write your team name, and click on the button <em>create pull request</em></p></li>
-</ul>
-<p><img src="https://github.com/PTOoster/Exercise-Guide/blob/master/images/pull_request.png?raw=true" alt="Add team member" /></p>
-<ul>
-<li>Go to the <a href="https://github.com/geoscripting-2020">geoscripting-2020 organization</a>. Under the tab <em>pull requests</em> you can now see the exercise repositories of all teams. To review, leave a comment under the pull request</li>
-</ul>
-<img src="https://github.com/PTOoster/Exercise-Guide/blob/master/images/review.png?raw=true" alt="Add team member" />
+<h1 id="build-notifications-in-ms-teams">Build notifications in MS Teams</h1>
+<p>You will receive an email from Travis about the status of your build. In your <code>.travis.yml</code> file you can also specify other channels to receive build notifications. One useful thing to do is to enable notifications in MS Teams!</p>
+<p>To do that:</p>
+<ol type="1">
+<li>Go to your group’s private channel on MS Teams. (Please make sure you’re doing that in a separate channel so as not to spam the main channels with irrelevant notifications.)</li>
+<li>Press the “…” button of the channel and select <em>Connectors</em></li>
+<li>Press the <em>Configure</em> button next to <em>Travis CI</em></li>
+<li>Enter the name of your team and press <em>Create</em></li>
+<li>Copy the webhook URL</li>
+<li>Edit your <code>.travis.yml</code> file and at the bottom add (like in Python, <strong>whitespace is important</strong>):</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">notifications</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">webhooks</span><span class="kw">:</span><span class="at"> https://outlook.office.com/webhook/...long_code_that_you_just_copied...</span></span></code></pre></div>
+<ol start="7" type="1">
+<li>Commit and push. The Travis bot will now post notifications to your channel.</li>
+<li>When you use other repositories, you can reuse the same webhook; just continue from step 6.</li>
+</ol>
+<h2 id="references-and-further-reading">References and further reading</h2>
+<p><a href="https://docs.travis-ci.com">https://docs.travis-ci.com</a></p>
+<p><a href="https://github.com/dwyl/learn-travis">https://github.com/dwyl/learn-travis</a></p>
+<p><a href="http://mahugh.com/2016/09/02/travis-ci-for-test-automation/#prettyPhoto">http://mahugh.com/2016/09/02/travis-ci-for-test-automation/#prettyPhoto</a></p>
+<p><a href="http://r-pkgs.had.co.nz/description.html">http://r-pkgs.had.co.nz/description.html</a></p>
 </div>
 </div>
 </div>

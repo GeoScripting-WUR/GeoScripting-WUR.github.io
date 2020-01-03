@@ -115,8 +115,6 @@ See Microsoft teams!
 - Getting started with Linux, Git, Refresh R scripting skills
 - Able to write a function
 - Submit an exercise that will be automatically evaluated!
-
-*Socrative Quiz at the end of this presentation!*
     
 ## What  is a scripting language?
 
@@ -165,14 +163,6 @@ grid.raster(img)
  - QGIS
  - GRASS
  - PostGIS
-
-## Challenge
-
-Login to socrative: http://www.socrative.com
-
-Room: GEOSCRIPTING
-
-Quiz: Geo-scripting intro
 
 ## Time for R action!
 

@@ -16,7 +16,7 @@ output:
 
 We recommend refreshing your R and Python knowledge before the course with
 
-#### [DataCamp: Interactive learning ](https://www.datacamp.com/) ![DataCamp](logo-slogan.png)
+#### [DataCamp: Interactive learning ](https://www.datacamp.com/) ![DataCamp](figs/datacamp.svg)
 
 
 # Week 1

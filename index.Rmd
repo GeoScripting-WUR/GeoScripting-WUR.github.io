@@ -33,7 +33,7 @@ We recommend refreshing your R and Python knowledge before the course with
 #### [Lesson 5: Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
 #### [Lesson 6: Vector - Raster](http://geoscripting-wur.github.io/VectorRaster/)
 #### [Lesson 7: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
-#### [Lesson 8: Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
+#### [Lesson 8: Google Earth Engine Intro and Demo](https://geoscripting-wur.github.io/Earth_Engine/) | [Project work explanation and teams](https://geoscripting-wur.github.io/ProjectIntro/)
 #### Assignment of Week 2
 
 # Week 3
@@ -41,7 +41,6 @@ We recommend refreshing your R and Python knowledge before the course with
 #### [Lesson 10: Open source Python (vector)](https://geoscripting-wur.github.io/PythonVector/)
 #### [Lesson 11: Open source Python (raster)](https://geoscripting-wur.github.io/PythonRaster/)
 #### Assignment of Week 3
-#### [Lesson 12: Google Earth Engine Intro and Demo](https://geoscripting-wur.github.io/Earth_Engine/)
 <!-- #### [Lesson 14: Web harvesting; dealing with twitter data via Python](https://geoscripting-wur.github.io/PythonTwitter/) -->
 <!-- #### [Lesson 15: Webmapping demo](nens.html) -->
 

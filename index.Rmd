@@ -40,7 +40,7 @@ We recommend refreshing your R and Python knowledge before the course with
 #### [Lesson 9: Python refresher and project work](https://geoscripting-wur.github.io/PythonRefresher/)
 #### [Lesson 10: Open source Python (vector)](https://geoscripting-wur.github.io/PythonVector/)
 #### [Lesson 11: Open source Python (raster)](https://geoscripting-wur.github.io/PythonRaster/)
-#### Assignment of Week 3
+#### Self-study for exam
 <!-- #### [Lesson 14: Web harvesting; dealing with twitter data via Python](https://geoscripting-wur.github.io/PythonTwitter/) -->
 <!-- #### [Lesson 15: Webmapping demo](nens.html) -->
 

@@ -22,7 +22,7 @@
       padding-top: 50px;
       padding-bottom: 50px;
       hyphens: auto;
-      word-wrap: break-word;
+      overflow-wrap: break-word;
       text-rendering: optimizeLegibility;
       font-kerning: normal;
     }
@@ -30,6 +30,9 @@
       body {
         font-size: 0.9em;
         padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
       }
     }
     @media print {
@@ -93,6 +96,7 @@
     pre code {
       padding: 0;
       overflow: visible;
+      overflow-wrap: normal;
     }
     .sourceCode {
      background-color: transparent;
@@ -134,15 +138,26 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1000,41 +1015,80 @@
   </style>
 </head>
 <body>
+<title>
+WUR Geoscripting course
+</title>
 <div id="wrap">
 <div class="container">
 <div class="row row-offcanvas row-offcanvas-right">
 <div class="contents col-xs-12 col-md-10">
-<style type="text/css">body {max-width: none;}
-a:visited {
-      color: #91170a;
-    }
+<style type="text/css">
+body {max-width: none;}
+a:visited {color: #91170a;}
 </style>
-<h1 id="wur-geoscripting"><a href="https://geoscripting-wur.github.io/">WUR Geoscripting</a> <img src="https://www.wur.nl/upload/854757ab-168f-46d7-b415-f8b501eebaa5_WUR_RGB_standard_2021-site.svg" alt="WUR logo" style="height: 35px;"/></h1>
-<p>We recommend refreshing your R and Python knowledge before the course with</p>
-<h4 id="datacamp-interactive-learning-datacamp"><a href="https://www.datacamp.com/">DataCamp: Interactive learning</a> <img src="figs/datacamp.svg" alt="DataCamp" /></h4>
+<h1 id="wur-geoscripting"><a
+href="https://geoscripting-wur.github.io/">WUR Geoscripting</a>
+<img src="https://www.wur.nl/upload/854757ab-168f-46d7-b415-f8b501eebaa5_WUR_RGB_standard_2021-site.svg" alt="WUR logo" style="height: 35px;"/></h1>
+<p>We recommend refreshing your R and Python knowledge before the course
+with</p>
+<h4 id="datacamp-interactive-learning-datacamp"><a
+href="https://www.datacamp.com/">DataCamp: Interactive learning</a> <img
+src="figs/datacamp.svg" alt="DataCamp" /></h4>
 <h1 id="week-1">Week 1</h1>
-<h4 id="lesson-1-carrying-out-a-scripting-project"><a href="http://geoscripting-wur.github.io/RProjectManagement">Lesson 1: Carrying out a scripting project</a></h4>
-<h4 id="lesson-2-introduction-to-linux"><a href="http://geoscripting-wur.github.io/Intro2Linux">Lesson 2: Introduction to Linux</a></h4>
-<h4 id="lesson-3-intro-to-functions-and-refresher-on-r"><a href="https://geoscripting-wur.github.io/Scripting4GeoIntro/">Lesson 3: Intro to functions and refresher on R</a></h4>
-<h4 id="assignment-of-week-1">Assignment of Week 1</h4>
-<h4 id="lesson-4-intro-to-raster"><a href="http://geoscripting-wur.github.io/IntroToRaster">Lesson 4: Intro to raster</a></h4>
-<!--#### [Lesson 2: Overview of R for geoscripting](https://geoscripting-wur.github.io/Scripting4Geo/)-->
+<h4 id="tutorial-1-carrying-out-a-scripting-project"><a
+href="https://geoscripting-wur.github.io/RProjectManagement">Tutorial 1:
+Carrying out a scripting project</a></h4>
+<h4 id="tutorial-2-introduction-to-linux"><a
+href="https://geoscripting-wur.github.io/Intro2Linux">Tutorial 2:
+Introduction to Linux</a></h4>
+<h4 id="tutorial-3-intro-to-functions-and-refresher-on-r"><a
+href="https://geoscripting-wur.github.io/Scripting4GeoIntro/">Tutorial
+3: Intro to functions and refresher on R</a></h4>
+<h4 id="tutorial-4-intro-to-raster"><a
+href="https://geoscripting-wur.github.io/IntroToRaster">Tutorial 4:
+Intro to raster</a></h4>
+<h4 id="assignment-1">Assignment 1</h4>
 <h1 id="week-2">Week 2</h1>
-<h4 id="lesson-5-vector---raster"><a href="http://geoscripting-wur.github.io/VectorRaster/">Lesson 5: Vector - Raster</a></h4>
-<h4 id="lesson-6-advanced-raster-analysis"><a href="https://geoscripting-wur.github.io/AdvancedRasterAnalysis/">Lesson 6: Advanced Raster Analysis</a></h4>
-<h4 id="lesson-7-google-earth-engine-intro-and-demo"><a href="https://geoscripting-wur.github.io/Earth_Engine/">Lesson 7: Google Earth Engine Intro and Demo</a></h4>
-<h4 id="assignment-of-week-2">Assignment of Week 2</h4>
-<h4 id="project-work-explanation-and-teams"><a href="https://geoscripting-wur.github.io/ProjectIntro/">Project work explanation and teams</a></h4>
+<h4 id="tutorial-5-vector---raster"><a
+href="https://geoscripting-wur.github.io/VectorRaster/">Tutorial 5:
+Vector - Raster</a></h4>
+<h4 id="tutorial-6-advanced-raster-analysis"><a
+href="https://geoscripting-wur.github.io/AdvancedRasterAnalysis/">Tutorial
+6: Advanced Raster Analysis</a></h4>
+<h4 id="tutorial-7-google-earth-engine-intro-and-demo"><a
+href="https://geoscripting-wur.github.io/Earth_Engine/">Tutorial 7:
+Google Earth Engine Intro and Demo</a></h4>
+<h4 id="project-week-introduction"><a
+href="https://geoscripting-wur.github.io/ProjectIntro/">Project week
+introduction</a></h4>
+<h4 id="assignment-2">Assignment 2</h4>
 <h1 id="week-3">Week 3</h1>
-<h4 id="lesson-8-python-refresher-and-project-work"><a href="https://geoscripting-wur.github.io/PythonRefresher/">Lesson 8: Python refresher and project work</a></h4>
-<h4 id="lesson-9-open-source-python-vector"><a href="https://geoscripting-wur.github.io/PythonVector/">Lesson 9: Open source Python (vector)</a></h4>
-<h4 id="lesson-10-open-source-python-raster"><a href="https://geoscripting-wur.github.io/PythonRaster/">Lesson 10: Open source Python (raster)</a></h4>
+<h4 id="tutorial-8-python-refresher"><a
+href="https://geoscripting-wur.github.io/PythonRefresher/">Tutorial 8:
+Python refresher</a></h4>
+<h4 id="tutorial-9-open-source-python-vector"><a
+href="https://geoscripting-wur.github.io/PythonVector/">Tutorial 9: Open
+source Python (vector)</a></h4>
+<h4 id="tutorial-10-open-source-python-raster"><a
+href="https://geoscripting-wur.github.io/PythonRaster/">Tutorial 10:
+Open source Python (raster)</a></h4>
 <h4 id="self-study-for-exam">Self-study for exam</h4>
-<!-- #### [Lesson 14: Web harvesting; dealing with twitter data via Python](https://geoscripting-wur.github.io/PythonTwitter/) -->
-<!-- #### [Lesson 15: Webmapping demo](nens.html) -->
+<h4 id="exam">Exam</h4>
+<!-- #### [Tutorial 14: Web harvesting; dealing with twitter data via Python](https://geoscripting-wur.github.io/PythonTwitter/) -->
+<!-- #### [Tutorial 15: Webmapping demo](nens.html) -->
 <h1 id="extra-and-optional">Extra and optional</h1>
-<h4 id="intro-to-vector"><a href="https://geoscripting-wur.github.io/IntroToVector/">Intro to vector</a></h4>
-<br /><br /><br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Geoscripting course material</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<h4 id="intro-to-vector"><a
+href="https://geoscripting-wur.github.io/IntroToVector/">Intro to
+vector</a></h4>
+<h4 id="geoscripting-in-r-demos"><a
+href="https://geoscripting-wur.github.io/Scripting4Geo/">Geoscripting in
+R: demo’s</a></h4>
+<br /><br /><br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span
+xmlns:dct="http://purl.org/dc/terms/"
+href="http://purl.org/dc/dcmitype/Text" property="dct:title"
+rel="dct:type">Geoscripting course material</span> is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+Commons Attribution-ShareAlike 4.0 International License</a>.
 </div>
 </div>
 </div>
@@ -1044,7 +1098,8 @@ a:visited {
 <div id="footer">
 <div class="container">
 <p class="text-muted" id="credit">
-Styled with <a href="https://github.com/jimhester/knitrBootstrap">knitrBootstrap</a>
+Styled with
+<a href="https://github.com/jimhester/knitrBootstrap">knitrBootstrap</a>
 </p>
 </div>
 </div>

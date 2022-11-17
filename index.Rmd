@@ -26,8 +26,8 @@ We recommend refreshing your R and Python knowledge before the course with
 
 # Week 1
 
-#### [Tutorial 1: Carrying out a scripting project](https://geoscripting-wur.github.io/RProjectManagement)
-#### [Tutorial 2: Introduction to Linux](https://geoscripting-wur.github.io/Intro2Linux)
+#### [Tutorial 1: Linux & version control](https://geoscripting-wur.github.io/RProjectManagement)
+#### [Tutorial 2: Linux terminal & Bash](https://geoscripting-wur.github.io/Intro2Linux)
 #### [Tutorial 3: Intro to functions and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
 #### [Tutorial 4: Intro to raster](https://geoscripting-wur.github.io/IntroToRaster)
 #### Assignment 1
@@ -36,15 +36,15 @@ We recommend refreshing your R and Python knowledge before the course with
 
 #### [Tutorial 5: Vector - Raster](https://geoscripting-wur.github.io/VectorRaster/)
 #### [Tutorial 6: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
-#### [Tutorial 7: Google Earth Engine Intro and Demo](https://geoscripting-wur.github.io/Earth_Engine/)
+#### [Tutorial 7: Google Earth Engine](https://geoscripting-wur.github.io/Earth_Engine/)
 #### [Project week introduction](https://geoscripting-wur.github.io/ProjectIntro/)
 #### Assignment 2
 
 # Week 3
 
 #### [Tutorial 8: Python refresher](https://geoscripting-wur.github.io/PythonRefresher/)
-#### [Tutorial 9: Open source Python (vector)](https://geoscripting-wur.github.io/PythonVector/)
-#### [Tutorial 10: Open source Python (raster)](https://geoscripting-wur.github.io/PythonRaster/)
+#### [Tutorial 9: Vector data handling with Python](https://geoscripting-wur.github.io/PythonVector/)
+#### [Tutorial 10: Raster data handling with Python](https://geoscripting-wur.github.io/PythonRaster/)
 #### Self-study for exam
 #### Exam
 <!-- #### [Tutorial 14: Web harvesting; dealing with twitter data via Python](https://geoscripting-wur.github.io/PythonTwitter/) -->

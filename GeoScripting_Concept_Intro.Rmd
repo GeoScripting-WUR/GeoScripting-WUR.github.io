@@ -3,8 +3,8 @@ title: "Geoscripting course introdduction"
 author: "Dainius Masiliūnas and Jan Verbesselt"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  #ioslides_presentation: default
-  beamer_presentation: default
+  ioslides_presentation: default
+  #beamer_presentation: default
 urlcolor: blue
 ---
 
@@ -48,7 +48,7 @@ Can you think of other advantages?
 
 ![](figs/16199604.jpg){width=30%}
 
-[See demos!](https://geoscripting-wur.github.io/Scripting4Geo/#why-scripting)
+[See demos on the course website!](https://geoscripting-wur.github.io/Scripting4Geo/#why-scripting)
 
 ## What is a scripting (interpreted) language?
 
@@ -74,16 +74,17 @@ grid.raster(img)
 
 - R
 - Python
-- GRASS (grass function are included in QGIS)
-- JavaScript for geoweb scripting
+- Julia
+- GRASS (functions are also included in QGIS)
+- JavaScript (geoweb scripting)
 - Matlab
 - IDL (ENVI)
 - ...
 
 ## Python versus R
 
-- Python is a general purpose programming language
-- R is particularly strong in statistical computing and graphics
+- Python is a general purpose programming language, stronger in deep learning
+- R is easier to use and is particularly strong in statistical computing and visualisation
 - Syntactic differences between R and Python can be confusing  
 - There are many R and Python packages for spatial analyses
 
@@ -120,10 +121,10 @@ every day helped to develop this course
 
 ## Who are we?
 
-- Course coordinators: Dainius Masiliūnas, Jan Verbesselt
-- Lecturers: Judith Verstegen (Python week) and Andrei Mîrţ (Scoold & GEE)
-- Teaching assistants: Yneke van Iersel, Victor Bonekamp, Daan Kivits
-- Guest lecturers: Robert Masolele, Nandika Tsendbazar, Benjamin Brede
+- Course coordinator: Dainius Masiliūnas
+- Lecturer: Sietse van der Woude (Python week)
+- Teaching assistants: Kim van Hoeve, Zina Janssen, Zoi Gutschke, Niamh Kelly, Martijn van Sluijs
+- Guest lecturers: Robert Masolele, Nandika Tsendbazar, Arno Timmer
 
 ## Geoscripting learning objectives
 
@@ -145,21 +146,21 @@ university will present (guest presentations)
 
 ## How will we learn all that?
 
-<!--![](figs/big-picture.svg){width=70%}
- Uncomment below for PDF, above for HTML-->
-![](figs/big-picture_svg-tex.pdf)
+![](figs/big-picture.svg){width=70%}
+<!-- Uncomment below for PDF, above for HTML
+![](figs/big-picture_svg-tex.pdf)-->
 
 ## What we will do every day
 
-* 08:30 - 11:00: Self-study (individually)
-* 11:00 - 12:00: Work on exercise of the day (in pairs)
-* 12:00 - 13:00: Lunch break
-* 13:00 - 15:00: Work on exercise of the day (in pairs)
-* 15:00 - 15:30: Review exercise of two other teams
-* 15:30 - 16:00: Discussion session
-* 16:00 - 17:00: Guest presentation & wrap-up
+* 09:00 - 11:30: Self-study (individually)
+* 11:30 - 13:00: Work on exercise of the day (in pairs)
+* 13:00 - 14:00: Lunch break
+* 14:00 - 15:30: Work on exercise of the day (in pairs)
+* 15:30 - 16:00: Review exercise of two other teams
+* 16:30 - 17:00: Discussion session
+* 17:00 - 18:00: Guest presentation & wrap-up
 
-Exceptions: Assignment days (Thursdays), the exam day and the project week: whole day work!
+Exceptions: Fridays (assignments and exam) and the project week: whole day work!
 
 ## Deliverables
 
@@ -167,9 +168,9 @@ Exceptions: Assignment days (Thursdays), the exam day and the project week: whol
 * Weekly assignments: in pairs, graded (**20%**) and peer reviewed; peer review is graded too!
 * Exam: individual assignment, graded (**30%**), **not** peer reviewed but receive feedback from autotests, mostly practice.
 * Final project: in pairs, graded (**50%**) and peer reviewed.
-  * Think of a geoscripting topic feasible within 3.5 days with 4 people
+  * Choose a geoscripting topic feasible within 3.5 days with a team of 4
 
-Starter material will be made available for each group/person on GitLab: [https://git.wur.nl/geoscripting-2022](https://git.wur.nl/geoscripting-2022).
+Starter material will be made available for each group/person on GitLab: [https://git.wur.nl/geoscripting-2023-january](https://git.wur.nl/geoscripting-2023-january).
 Every change in the starter is automatically submitted to Brightspace (CodeGrade), rubrics and automatic feedback is available there.
 
 ## Team work & helping each other
@@ -190,18 +191,19 @@ Confused?! Always start in Microsoft Teams!
 - Announcements in the General channel!
 - If you like, you can create a new channel for your team's internal communication
 - Tabs at the top link to all content!
-- Support in the Questions and Answers channel! Simply join one (or more) of the ongoing meetings and raise your hand!
-- Offline support on the Scoold Q&A platform!
+- Support in the Support channel! Or raising your hand/using a sticker in class.
+- Offline support on the Brightspace discussion forum!
 
 ## What we will do today
 
-* 08:30 - 10:00: Introduction presentation
-* 10:00 - 12:00: Self-study ([geoscripting-wur.github.io](geoscripting-wur.github.io))
-* 12:00 - 13:00: Lunch break
-* 13:00 - **15:00**: Use git to submit your thoughts on what you would like to work on during the course
-* 15:00 - **15:30**: Review the idea of two other teams
-* 15:30 - 16:00: Discussion session
-* 16:00 - 17:00: Interactive Git presentation
+* 10:30 - 13:00: Self-study ([geoscripting-wur.github.io](geoscripting-wur.github.io))
+* 13:00 - 14:00: Lunch break
+* 14:00 - 14:30: Demo on how to use CodeGrade (Aurora)
+* 14:30 - **15:30**: Use git to submit your thoughts on what you would like to work on during the course (Aurora)
+* 15:30 - **16:00**: Review the idea of two other teams (Aurora)
+* 16:00 - 16:30: Break to walk to Orion
+* 16:30 - 17:00: Discussion session (Orion)
+* 17:00 - 18:00: Interactive Git presentation (Orion)
 
 Deadlines are always **hard**!
 

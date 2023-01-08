@@ -1,5 +1,5 @@
 ---
-title: "Geoscripting course introdduction"
+title: "Geoscripting course introduction"
 author: "Dainius Masiliūnas and Jan Verbesselt"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:

@@ -196,7 +196,7 @@ Confused?! Always start in Microsoft Teams!
 
 ## What we will do today
 
-* 10:30 - 13:00: Self-study ([geoscripting-wur.github.io](geoscripting-wur.github.io))
+* 11:00 - 13:00: Self-study ([geoscripting-wur.github.io](https://geoscripting-wur.github.io))
 * 13:00 - 14:00: Lunch break
 * 14:00 - 14:30: Demo on how to use CodeGrade (Aurora)
 * 14:30 - **15:30**: Use git to submit your thoughts on what you would like to work on during the course (Aurora)

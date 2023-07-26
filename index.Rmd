@@ -1,21 +1,28 @@
 ---
 pagetitle: "WUR Geoscripting course"
-author: "Jan Verbesselt and Dainius Masiliunas"
+author: "Dainius Masiliūnas, Arno Timmer"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  knitrBootstrap::bootstrap_document:
+  rmdformats::html_clean:
     title: "WUR Geoscripting course"
-    theme: "simplex"
-    highlight: Tomorrow Night Bright
-    menu: FALSE
-    theme.chooser: TRUE
-    highlight.chooser: FALSE
+    highlight: zenburn
 ---
 
-<style type="text/css">
-body {max-width: none;}
-a:visited {color: #91170a;}
-</style>
+```{css, echo=FALSE}
+@import url("https://netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css");
+.main-container {max-width: none;}
+pre {color: inherit; background-color: inherit;}
+code[class^="sourceCode"]::before {
+  content: attr(class);
+  display: block;
+  text-align: right;
+  font-size: 70%;
+}
+code[class^="sourceCode r"]::before { content: "R Source";}
+code[class^="sourceCode python"]::before { content: "Python Source"; }
+code[class^="sourceCode bash"]::before { content: "Bash Source"; }
+```
+
 
 # [WUR Geoscripting](https://geoscripting-wur.github.io/) <img src="https://www.wur.nl/upload/854757ab-168f-46d7-b415-f8b501eebaa5_WUR_RGB_standard_2021-site.svg" alt="WUR logo" style="height: 35px;"/>
 
@@ -28,7 +35,7 @@ We recommend refreshing your R and Python knowledge before the course with
 
 #### [Tutorial 1: Linux & version control](https://geoscripting-wur.github.io/RProjectManagement)
 #### [Tutorial 2: Linux terminal & Bash](https://geoscripting-wur.github.io/Intro2Linux)
-#### [Tutorial 3: R & Python basics]()
+#### [Tutorial 3: R & Python basics](https://geoscripting-wur.github.io/RPythonBasics/)
 
 # Week 2
 

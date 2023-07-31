@@ -10,7 +10,6 @@ output:
 
 ```{css, echo=FALSE}
 @import url("https://netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css");
-.main-container {max-width: none;}
 pre {color: inherit; background-color: inherit;}
 code[class^="sourceCode"]::before {
   content: attr(class);

@@ -113,7 +113,7 @@
          <rect class="BoundingBox" stroke="none" fill="none" x="9499" y="1099" width="9703" height="3303"/>
          <path fill="rgb(180,199,220)" stroke="none" d="M 14350,4400 L 9500,4400 9500,1100 19200,1100 19200,4400 14350,4400 Z"/>
          <path fill="none" stroke="rgb(0,0,0)" d="M 14350,4400 L 9500,4400 9500,1100 19200,1100 19200,4400 14350,4400 Z"/>
-         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="847px" font-weight="700"><tspan class="TextPosition" x="12580" y="2443"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 1</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="529px" font-weight="400"><tspan class="TextPosition" x="12139" y="3797"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Linux ecosystem</tspan></tspan></tspan></text>
+         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="564px" font-weight="700"><tspan class="TextPosition" x="13174" y="2223"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 1</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="705px" font-weight="400"><tspan class="TextPosition" x="11394" y="3696"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Linux ecosystem</tspan></tspan></tspan></text>
         </g>
        </g>
        <g class="Graphic">
@@ -689,7 +689,7 @@
          <rect class="BoundingBox" stroke="none" fill="none" x="9499" y="4699" width="9703" height="3303"/>
          <path fill="rgb(180,199,220)" stroke="none" d="M 14350,8000 L 9500,8000 9500,4700 19200,4700 19200,8000 14350,8000 Z"/>
          <path fill="none" stroke="rgb(0,0,0)" d="M 14350,8000 L 9500,8000 9500,4700 19200,4700 19200,8000 14350,8000 Z"/>
-         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="847px" font-weight="700"><tspan class="TextPosition" x="11627" y="6043"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 2 &amp; 3</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="529px" font-weight="400"><tspan class="TextPosition" x="12084" y="7397"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Geoscripting in R</tspan></tspan></tspan></text>
+         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="564px" font-weight="700"><tspan class="TextPosition" x="12539" y="5823"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 2 &amp; 3</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="706px" font-weight="400"><tspan class="TextPosition" x="11318" y="7296"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Geoscripting in R</tspan></tspan></tspan></text>
         </g>
        </g>
        <g class="com.sun.star.drawing.CustomShape">
@@ -697,7 +697,7 @@
          <rect class="BoundingBox" stroke="none" fill="none" x="9499" y="8299" width="9703" height="3303"/>
          <path fill="rgb(180,199,220)" stroke="none" d="M 14350,11600 L 9500,11600 9500,8300 19200,8300 19200,11600 14350,11600 Z"/>
          <path fill="none" stroke="rgb(0,0,0)" d="M 14350,11600 L 9500,11600 9500,8300 19200,8300 19200,11600 14350,11600 Z"/>
-         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="847px" font-weight="700"><tspan class="TextPosition" x="11627" y="9643"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 4 &amp; 5</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="529px" font-weight="400"><tspan class="TextPosition" x="11354" y="10997"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Geoscripting in Python</tspan></tspan></tspan></text>
+         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="564px" font-weight="700"><tspan class="TextPosition" x="12539" y="9423"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 4 &amp; 5</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="706px" font-weight="400"><tspan class="TextPosition" x="10338" y="10896"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Geoscripting in Python</tspan></tspan></tspan></text>
         </g>
        </g>
        <g class="com.sun.star.drawing.CustomShape">
@@ -705,7 +705,7 @@
          <rect class="BoundingBox" stroke="none" fill="none" x="9499" y="11899" width="9703" height="3303"/>
          <path fill="rgb(180,199,220)" stroke="none" d="M 14350,15200 L 9500,15200 9500,11900 19200,11900 19200,15200 14350,15200 Z"/>
          <path fill="none" stroke="rgb(0,0,0)" d="M 14350,15200 L 9500,15200 9500,11900 19200,11900 19200,15200 14350,15200 Z"/>
-         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="847px" font-weight="700"><tspan class="TextPosition" x="11483" y="13243"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 6 &amp; 7 </tspan></tspan></tspan><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="529px" font-weight="400"><tspan class="TextPosition" x="13242" y="14597"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Project  </tspan></tspan></tspan></text>
+         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="564px" font-weight="700"><tspan class="TextPosition" x="12444" y="13023"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 6 &amp; 7 </tspan></tspan></tspan><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="706px" font-weight="400"><tspan class="TextPosition" x="12868" y="14496"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Project  </tspan></tspan></tspan></text>
         </g>
        </g>
        <g class="com.sun.star.drawing.CustomShape">
@@ -713,7 +713,7 @@
          <rect class="BoundingBox" stroke="none" fill="none" x="9499" y="15499" width="9703" height="1603"/>
          <path fill="rgb(180,199,220)" stroke="none" d="M 14350,17100 L 9500,17100 9500,15500 19200,15500 19200,17100 14350,17100 Z"/>
          <path fill="none" stroke="rgb(0,0,0)" d="M 14350,17100 L 9500,17100 9500,15500 19200,15500 19200,17100 14350,17100 Z"/>
-         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="847px" font-weight="700"><tspan class="TextPosition" x="12345" y="16636"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 8 </tspan><tspan font-size="529px" fill="rgb(0,0,0)" stroke="none" style="white-space: pre"> </tspan></tspan></tspan></text>
+         <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Verdana, sans-serif" font-size="529px" font-weight="700"><tspan class="TextPosition" x="13060" y="16511"><tspan fill="rgb(0,0,0)" stroke="none" style="white-space: pre">Week 8  </tspan></tspan></tspan></text>
         </g>
        </g>
        <g class="com.sun.star.drawing.CustomShape">

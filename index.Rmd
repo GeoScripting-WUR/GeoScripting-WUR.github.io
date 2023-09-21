@@ -52,11 +52,11 @@ We recommend refreshing your R and Python knowledge before the course with
 
 #### [Python refresher](https://geoscripting-wur.github.io/PythonRefresher/)
 #### [Vector data handling with Python](https://geoscripting-wur.github.io/PythonVector/)
+#### [Project week introduction](https://geoscripting-wur.github.io/ProjectIntro/)
 
 # Week 5
 #### [Raster data handling with Python](https://geoscripting-wur.github.io/PythonRaster/)
 #### [Google Earth Engine and Python](https://geoscripting-wur.github.io/Python-GEE/)
-#### [Project week introduction](https://geoscripting-wur.github.io/ProjectIntro/)
 
 # Week 6 & 7
 #### Project weeks

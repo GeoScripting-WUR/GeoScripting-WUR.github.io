@@ -1,6 +1,6 @@
 ---
 pagetitle: "WUR Geoscripting course"
-author: "Dainius Masiliūnas, Arno Timmer"
+author: "Jan Verbesselt, Dainius Masiliūnas, Arno Timmer"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   rmdformats::html_clean:
@@ -10,6 +10,7 @@ output:
 
 ```{css, echo=FALSE}
 @import url("https://netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css");
+.main-container {max-width: none;}
 pre {color: inherit; background-color: inherit;}
 code[class^="sourceCode"]::before {
   content: attr(class);
@@ -31,32 +32,28 @@ We recommend refreshing your R and Python knowledge before the course with
 
 
 # Week 1
-
-#### [Linux & version control](https://geoscripting-wur.github.io/RProjectManagement)
-#### [Linux terminal & Bash](https://geoscripting-wur.github.io/Intro2Linux)
-#### [R & Python basics](https://geoscripting-wur.github.io/RPythonBasics/)
+#### [Tutorial 1: Linux & version control](https://geoscripting-wur.github.io/RProjectManagement)
+#### [Tutorial 2: Linux terminal & Bash](https://geoscripting-wur.github.io/Intro2Linux)
+#### [Tutorial 3: R & Python basics](https://geoscripting-wur.github.io/RPythonBasics/)
 
 # Week 2
-
-#### [Intro to functions and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
-#### [Intro to raster](https://geoscripting-wur.github.io/IntroToRaster)
+#### [Tutorial 4: Intro to functions and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
+#### [Tutorial 5: Intro to raster](https://geoscripting-wur.github.io/IntroToRaster)
 #### Assignment 1
 
 # Week 3
-
-#### [Vector - Raster](https://geoscripting-wur.github.io/VectorRaster/)
-#### [Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
-#### Assignment 2
-
-# Week 4
-
-#### [Python refresher](https://geoscripting-wur.github.io/PythonRefresher/)
-#### [Vector data handling with Python](https://geoscripting-wur.github.io/PythonVector/)
+#### [Tutorial 6: Vector - Raster](https://geoscripting-wur.github.io/VectorRaster/)
+#### [Tutorial 7: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
 #### [Project week introduction](https://geoscripting-wur.github.io/ProjectIntro/)
 
+# Week 4
+#### [Tutorial 8: Python Environments](https://geoscripting-wur.github.io/pythonEnvs/)
+#### [Tutorial 9: Python Programming](https://geoscripting-wur.github.io/pythonRefresher/)
+#### Assignment 2
+
 # Week 5
-#### [Raster data handling with Python](https://geoscripting-wur.github.io/PythonRaster/)
-#### [Google Earth Engine and Python](https://geoscripting-wur.github.io/Python-GEE/)
+#### [Tutorial 10: Vector data handling with Python](https://geoscripting-wur.github.io/PythonVector/)
+#### [Tutorial 11: Raster data handling with Python](https://geoscripting-wur.github.io/PythonRaster/)
 
 # Week 6 & 7
 #### Project weeks
@@ -64,8 +61,8 @@ We recommend refreshing your R and Python knowledge before the course with
 # Week 8
 #### Self-study for exam
 #### Exam
-<!-- #### [Web harvesting; dealing with twitter data via Python](https://geoscripting-wur.github.io/PythonTwitter/) -->
-<!-- #### [Webmapping demo](nens.html) -->
+<!-- #### [Tutorial 14: Web harvesting; dealing with twitter data via Python](https://geoscripting-wur.github.io/PythonTwitter/) -->
+<!-- #### [Tutorial 15: Webmapping demo](nens.html) -->
 
 # Extra and optional
 #### [Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)

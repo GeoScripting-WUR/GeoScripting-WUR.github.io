@@ -37,13 +37,13 @@ We recommend refreshing your R and Python knowledge before the course with
 #### [Tutorial 3: R & Python basics](https://geoscripting-wur.github.io/RPythonBasics/)
 
 # Week 2
-#### [Tutorial 4: Intro to functions and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
-#### [Tutorial 5: Intro to raster](https://geoscripting-wur.github.io/IntroToRaster)
+#### [Tutorial 4: Package and project management](https://geoscripting-wur.github.io/RProjectManagement/project_management.html)
+#### [Tutorial 5: Intro to functions and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
 #### Assignment 1
 
 # Week 3
-#### [Tutorial 6: Vector - Raster](https://geoscripting-wur.github.io/VectorRaster/)
-#### [Tutorial 7: Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
+#### [Tutorial 6: Intro to raster](https://geoscripting-wur.github.io/IntroToRaster)
+#### [Tutorial 7: Vector - Raster](https://geoscripting-wur.github.io/VectorRaster/)
 #### [Project week introduction](https://geoscripting-wur.github.io/ProjectIntro/)
 
 # Week 4
@@ -66,6 +66,7 @@ We recommend refreshing your R and Python knowledge before the course with
 
 # Extra and optional
 #### [Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
+#### [Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
 #### [Geoscripting in R: demos](https://geoscripting-wur.github.io/Scripting4Geo/)
 #### [Google Earth Engine](https://geoscripting-wur.github.io/Python-GEE/)
 

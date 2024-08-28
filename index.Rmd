@@ -48,7 +48,7 @@ We recommend refreshing your R and Python knowledge before the course with
 
 # Week 4
 #### [Tutorial 8: Python Environments](https://geoscripting-wur.github.io/pythonEnvs/)
-#### [Tutorial 9: Python Programming](https://geoscripting-wur.github.io/pythonProgramming/)
+#### [Tutorial 9: Python Programming](https://geoscripting-wur.github.io/PythonProgramming/)
 #### Assignment 2
 
 # Week 5

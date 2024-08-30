@@ -48,7 +48,7 @@ We recommend refreshing your R and Python knowledge before the course with
 
 # Week 4
 #### [Tutorial 8: Python Environments](https://geoscripting-wur.github.io/pythonEnvs/)
-#### [Tutorial 9: Python Programming](https://geoscripting-wur.github.io/pythonRefresher/)
+#### [Tutorial 9: Python Programming](https://geoscripting-wur.github.io/PythonProgramming/)
 #### Assignment 2
 
 # Week 5
@@ -68,5 +68,6 @@ We recommend refreshing your R and Python knowledge before the course with
 #### [Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
 #### [Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
 #### [Geoscripting in R: demos](https://geoscripting-wur.github.io/Scripting4Geo/)
+#### [Google Earth Engine](https://geoscripting-wur.github.io/Python-GEE/)
 
 <br /><br /><br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Geoscripting course material</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

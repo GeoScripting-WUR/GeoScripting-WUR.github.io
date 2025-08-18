@@ -1,10 +1,9 @@
 ---
 pagetitle: "WUR Geoscripting course"
 author: "Jan Verbesselt, Dainius Masiliūnas, Arno Timmer"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output:
   rmdformats::html_clean:
-    title: "WUR Geoscripting course"
     highlight: zenburn
 ---
 
@@ -37,23 +36,24 @@ We recommend refreshing your R and Python knowledge before the course with
 #### [Tutorial 3: R & Python basics](https://geoscripting-wur.github.io/RPythonBasics/)
 
 # Week 2
-#### [Tutorial 4: Package and project management](https://geoscripting-wur.github.io/RProjectManagement/project_management.html)
+#### [Tutorial 4: Finding help and best coding practices](https://geoscripting-wur.github.io/RProjectManagement/finding_help.html)
 #### [Tutorial 5: Intro to functions and refresher on R](https://geoscripting-wur.github.io/Scripting4GeoIntro/)
-#### Assignment 1
+#### [Project week introduction](https://geoscripting-wur.github.io/ProjectIntro/)
 
 # Week 3
 #### [Tutorial 6: Intro to raster](https://geoscripting-wur.github.io/IntroToRaster)
 #### [Tutorial 7: Vector - Raster](https://geoscripting-wur.github.io/VectorRaster/)
-#### [Project week introduction](https://geoscripting-wur.github.io/ProjectIntro/)
+#### Assignment 1
 
 # Week 4
 #### [Tutorial 8: Python Environments](https://geoscripting-wur.github.io/pythonEnvs/)
 #### [Tutorial 9: Python Programming](https://geoscripting-wur.github.io/PythonProgramming/)
-#### Assignment 2
+#### Project proposal hand-in
 
 # Week 5
 #### [Tutorial 10: Vector data handling with Python](https://geoscripting-wur.github.io/PythonVector/)
 #### [Tutorial 11: Raster data handling with Python](https://geoscripting-wur.github.io/PythonRaster/)
+#### Assignment 2
 
 # Week 6 & 7
 #### Project weeks
@@ -65,8 +65,9 @@ We recommend refreshing your R and Python knowledge before the course with
 <!-- #### [Tutorial 15: Webmapping demo](nens.html) -->
 
 # Extra and optional
-#### [Intro to vector](https://geoscripting-wur.github.io/IntroToVector/)
-#### [Advanced Raster Analysis](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
+#### [Package and project management (R & Python)](https://geoscripting-wur.github.io/RProjectManagement/project_management.html)
+#### [Intro to vector (R)](https://geoscripting-wur.github.io/IntroToVector/)
+#### [Advanced Raster Analysis (R)](https://geoscripting-wur.github.io/AdvancedRasterAnalysis/)
 #### [Geoscripting in R: demos](https://geoscripting-wur.github.io/Scripting4Geo/)
 #### [Google Earth Engine](https://geoscripting-wur.github.io/Python-GEE/)
 

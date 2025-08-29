@@ -162,8 +162,21 @@ university will present (guest presentations)
 * Final project: in groups of four, graded (**50%**) and peer reviewed.
   * Choose a geoscripting topic feasible within 7 half-days
 
-Starter material will be made available for each group/person on GitLab: [https://git.wur.nl/geoscripting-2025](https://git.wur.nl/geoscripting-2025).
-Every change in your starter is automatically submitted to Brightspace (CodeGrade), rubrics and automatic feedback is available there.
+## Exercises
+
+* Starter material will be made available for each group/person on GitLab: [https://git.wur.nl/geoscripting-2025](https://git.wur.nl/geoscripting-2025).
+* Every change in your starter is automatically submitted to Brightspace (CodeGrade), rubrics and automatic feedback is available there.
+
+## AI Traffic Light {.columns-2}
+
+![](figs/trafficlight.png){width=100%}
+
+<p class="forceBreak"></p>
+
+Green – Extensive Use
+
+* Students can use generative AI throughout their work, as long as they disclose usage and critically reflect on its contribution.
+* WUR resources on Generative AI: ![](figs/genai-qr.png)
 
 ## Peer review
 

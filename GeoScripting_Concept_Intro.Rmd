@@ -1,7 +1,7 @@
 ---
 title: "Geoscripting course introduction"
 author: "Dainius Masiliūnas"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output:
   ioslides_presentation: default
   #beamer_presentation: default
@@ -101,11 +101,14 @@ e.g.:
  - GRASS
  - PostGIS
 
+<!--
 ## ...Cliffhanger!
 
 How will you learn about all that in the course? Find out after this 5-minute break!
 
 ![](figs/cliffhanger.jpg){width=70%}
+
+-->
 
 ## The Geoscripting course
 
@@ -123,14 +126,15 @@ every day helped to develop this course
 
 - Course coordinator: Dainius Masiliūnas
 - Lecturer: Arno Timmer
-- Teaching assistants: Gabrielė Tijūnaitytė, Nik Verweel, Niek Bongers, Bianka Fábryová 
+- Teaching assistants (PhD): Tijmen Remijnse, Xuemeng Tian, Yang Li
+- Teaching assistants (MSc): Wybren de Jong, Janiek Hooijman, Ella van Loenen 
 - Guest lecturers: See course guide
 
 ## Geoscripting learning objectives
 
 - Demonstrate scripting skills by writing clear, documented, and reproducible scripts to read, write and visualise spatial data 
 - Apply version control supporting effective collaboration in a team 
-- Use documentation, search tools, and contribute to discussion platforms with reproducible examples as an aid to solve scripting challenges effectively 
+- Use documentation, (search) tools, and contribute to discussion platforms with reproducible examples as an aid to solve scripting challenges effectively 
 - Be willing to use and create open-source software with an appropriate software license 
 - Combine functions from novel libraries to efficiently process spatial data 
 - Create an integrated software project that solves a spatial challenge 
@@ -158,7 +162,7 @@ university will present (guest presentations)
 * Final project: in groups of four, graded (**50%**) and peer reviewed.
   * Choose a geoscripting topic feasible within 7 half-days
 
-Starter material will be made available for each group/person on GitLab: [https://git.wur.nl/geoscripting-2024](https://git.wur.nl/geoscripting-2024).
+Starter material will be made available for each group/person on GitLab: [https://git.wur.nl/geoscripting-2025](https://git.wur.nl/geoscripting-2025).
 Every change in your starter is automatically submitted to Brightspace (CodeGrade), rubrics and automatic feedback is available there.
 
 ## Peer review
@@ -172,7 +176,7 @@ Every change in your starter is automatically submitted to Brightspace (CodeGrad
 
 ## Team work & helping each other
 
-- Log into GitLab and set up 2-factor authentication: [https://git.wur.nl/-/profile/account](https://git.wur.nl/-/profile/account)
+- Log into GitLab: [https://git.wur.nl/-/profile/account](https://git.wur.nl/-/profile/account)
 - Set up teams of two:
   - Check your group on Brightspace (https://brightspace.wur.nl) > Deliverables > Practice exercises > Exercise 1!
   - If you don't have a team member, join an existing group with one person, if none, create a new group and join it
@@ -187,35 +191,35 @@ Every change in your starter is automatically submitted to Brightspace (CodeGrad
 Confused?! Always start in Microsoft Teams!
 
 - Find your teammate! You can use Microsoft Teams (https://teams.microsoft.com) to write them a message
-- Announcements in the General channel!
+- Announcements in the Announcements channel!
 - If you like, you can create a new channel for your team's internal communication
 - Tabs at the top link to all content!
-- Support in the Support channel! Or raising your hand/using a sticker in class.
+- Support in the Support channel! Or raising your hand in class.
 - Offline support on the Brightspace discussion forum!
 
 ## What we will do next
 
-* Today (Aurora B9010):
-  * 15:40 - 16:50: this presentation
-  * 16:50 - 17:20: Software licenses (Andrei Mirt)
-  * 17:20 - 18:50: Self-study ([geoscripting-wur.github.io](https://geoscripting-wur.github.io))
-* Tomorrow (Forum B0612+B0616):
+* Today:
+  * 14:00 - 14:45: this presentation
+  * 15:00 - 15:30: Software licenses (Andrei Mirt)
+  * 15:45 - 17:15: Self-study ([geoscripting-wur.github.io](https://geoscripting-wur.github.io))
+* Tomorrow:
   * 14:00 - **17:00**: Use git to submit your thoughts on what you would like to work on during the course
   * 16:00 - 16:30: Demo on how to use CodeGrade
-* Wednesday (Forum B0512+B0516):
-  * 14:00 - 14:45: Discussion about the first exercise
-  * 15:00 - 15:30: Presentation about Git
+* Wednesday:
+  * 15:50 - 16:35: Discussion about the first exercise
+  * 16:50 - 17:20: Presentation about Git
   * Rest of the day: self-study Bash tutorial, finish peer review  of the previous exercise by the end of the day
 
 Deadlines are always **hard**!
 
 ## What we will do every two days
 
-* Monday & Wednesday (Mondays shifted 1.5 hours later):
+* Monday & Wednesday (Wednesdays shifted 1.5 hours later):
   * 14:00 – 14:45: 	Guest presentation and/or plenary discussion session about tutorial and exercise 
   * 14:45 – 15:30:	Review of exercise from day before: feedback from the teachers, best solutions, and common mistakes; introduction to the tutorial of today 
   * 15:30 – 17:10: 	Follow tutorial and answer questions (individually, self-study); finish peer review of exercise or assignment from the previous day 
-* Tuesday & Thursday (Thursdays shifted 1.5 hours later?):
+* Tuesday & Thursday:
   * 14:00 – 17:00: 	Work on exercise (in pairs, teaching assistants available), submission via CodeGrade in Brightspace
 * Friday 14:00: assignments/project preparation work
 

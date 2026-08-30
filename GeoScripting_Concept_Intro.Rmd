@@ -125,19 +125,25 @@ every day helped to develop this course
 ## Who are we?
 
 - Course coordinator: Dainius Masiliūnas
-- Lecturer: Arno Timmer
-- Teaching assistants (PhD): Tijmen Remijnse, Xuemeng Tian, Yang Li
-- Teaching assistants (MSc): Wybren de Jong, Janiek Hooijman, Ella van Loenen 
-- Guest lecturers: See course guide
+- Lecturers: Arno Timmer, Erick Chacon Montalvan
+- Teaching assistants (PhD): Paolo Dal Lago, Tijmen Remijnse, Anne-Juul Welsink, Sriram Jallu
+- Teaching assistants (MSc): Roos Breukel, Tomer Peled, Susanna van de Wetering
+- Guest presenters: See course guide
 
 ## Geoscripting learning objectives
 
 - Demonstrate scripting skills by writing clear, documented, and reproducible scripts to read, write and visualise spatial data 
 - Apply version control supporting effective collaboration in a team 
-- Use documentation, (search) tools, and contribute to discussion platforms with reproducible examples as an aid to solve scripting challenges effectively 
+- Use documentation, online tools, and contribute to discussion platforms with reproducible examples as an aid to solve scripting challenges effectively
 - Be willing to use and create open-source software with an appropriate software license 
 - Combine functions from novel libraries to efficiently process spatial data 
 - Create an integrated software project that solves a spatial challenge 
+
+## How will we learn all that?
+
+![](figs/big-picture.svg){width=70%}
+<!-- Uncomment below for PDF, above for HTML
+![](figs/big-picture_svg-tex.pdf)-->
 
 ## Course concept
 
@@ -145,14 +151,10 @@ Flipped Classroom concept:
 
 ![](figs/flipping-the-classroom.jpg)
 
-* Experts from companies, research institutes and 
-university will present (guest presentations)
-
-## How will we learn all that?
-
-![](figs/big-picture.svg){width=70%}
-<!-- Uncomment below for PDF, above for HTML
-![](figs/big-picture_svg-tex.pdf)-->
+* You will follow tutorials on your own, no lectures
+* We will discuss how you managed to do exercises in class
+* Experts from companies, research institutes and
+university will give inspiration talks on how they use scripting in their work
 
 ## Deliverables
 
@@ -162,21 +164,67 @@ university will present (guest presentations)
 * Final project: in groups of four, graded (**50%**) and peer reviewed.
   * Choose a geoscripting topic feasible within 7 half-days
 
-## Exercises
-
-* Starter material will be made available for each group/person on GitLab: [https://git.wur.nl/geoscripting-2025](https://git.wur.nl/geoscripting-2025).
-* Every change in your starter is automatically submitted to Brightspace (CodeGrade), rubrics and automatic feedback is available there.
 
 ## AI Traffic Light {.columns-2}
 
-![](figs/trafficlight.png){width=100%}
+![](figs/trafficlight.svg){width=100%}
 
 <p class="forceBreak"></p>
 
-Green – Extensive Use
+Yellow – Restricted Use
 
-* Students can use generative AI throughout their work, as long as they disclose usage and critically reflect on its contribution.
-* WUR resources on Generative AI: ![](figs/genai-qr.png)
+* Students may use generative AI as a supplement or companion for writing or creating content with clear attribution, but human authorship must be primary by rewriting AI-generated text and code actively, and editing AI-generated images.
+  * WUR resources on Generative AI:
+  * ![](figs/genai-qr.png){width=30%}
+
+## Team work: set up teams of two
+
+- Log into GitLab: [https://git.wur.nl](https://git.wur.nl)
+- On https://brightspace.wur.nl > Deliverables > Practice exercises > Exercise 1 check your group and its name
+- If you don't have a team member, join an existing group with one person, if none, create a new group and join it
+- We will merge two groups of two for project work, but you will be allowed to change groups at that point
+
+<div class="centered">
+![](figs/teamwork.jpeg)
+</div>
+
+## Heeelp!
+
+Confused?! Brightspace is your support hub!
+
+- Check the course guide and other linked information. Offline support will be provided on Brightspace discussion forum.
+- Use Microsoft Teams (https://teams.microsoft.com) for live support:
+  - Support in the Support channel! Or raising your hand in class.
+  - Find your teammate by messaging them in Teams! You can also create a new channel to interact with your teammate.
+  - Share your memes in the Other Discussion channel!
+
+
+## What we will do next
+
+* Today:
+  * 14:00 - 14:45: this presentation
+  * 15:00 - 15:30: Software licenses (Andrei Mirt)
+  * 15:45 - 17:15: Self-study ([geoscripting-wur.github.io](https://geoscripting-wur.github.io))
+* Tomorrow:
+  * 14:00 - **17:15**: Use git to submit your thoughts on what you would like to work on during the course
+  * 16:00 - 16:30: Demo on how to use CodeGrade
+* Wednesday:
+  * 15:50 - 16:35: Discussion about the first exercise
+  * 16:50 - 17:20: Presentation about Git
+  * Rest of the day: self-study Bash tutorial, finish peer review  of the previous exercise by the end of the day
+
+Deadlines are always **hard**!
+
+## Learning outcomes of the rest of today and tomorrow:
+
+- Getting started with Linux, Git version control
+- Tomorrow: submit an exercise using Git!
+- Think of what you would like to learn during the course and potential project topics
+
+## Exercises
+
+* Starter material will be made available for each group/person on GitLab: [https://git.wur.nl/geoscripting-2026](https://git.wur.nl/geoscripting-2026).
+* Every change in your starter is automatically submitted to Brightspace (CodeGrade), rubrics and automatic feedback is available there.
 
 ## Peer review
 
@@ -187,54 +235,16 @@ Green – Extensive Use
   - Don't review the review.
   - In upcoming exercises, reproducibility is a prerequisite!
 
-## Team work & helping each other
+## Course schedule
 
-- Log into GitLab: [https://git.wur.nl/-/profile/account](https://git.wur.nl/-/profile/account)
-- Set up teams of two:
-  - Check your group on Brightspace (https://brightspace.wur.nl) > Deliverables > Practice exercises > Exercise 1!
-  - If you don't have a team member, join an existing group with one person, if none, create a new group and join it
-  - For project work, you will work in groups of 4, which we will set based on your chosen topics
+See detailed schedule at https://te.wur.nl:
 
-<div class="centered">
-![](figs/teamwork.jpeg)
-</div>
+* Every second day: an exercise ("Tutorial" on TimeEdit)
+* The next day: dicussion session about the exercise, guest presentation ("Lecture"), exercise peer review and reading the tutorial ("Tutorial")
+* After R and Python content: assignments ("Practical")
+* Project weeks ("Group work") and final presentations ("Lecture")
 
-## Heeelp!
-
-Confused?! Always start in Microsoft Teams!
-
-- Find your teammate! You can use Microsoft Teams (https://teams.microsoft.com) to write them a message
-- Announcements in the Announcements channel!
-- If you like, you can create a new channel for your team's internal communication
-- Tabs at the top link to all content!
-- Support in the Support channel! Or raising your hand in class.
-- Offline support on the Brightspace discussion forum!
-
-## What we will do next
-
-* Today:
-  * 14:00 - 14:45: this presentation
-  * 15:00 - 15:30: Software licenses (Andrei Mirt)
-  * 15:45 - 17:15: Self-study ([geoscripting-wur.github.io](https://geoscripting-wur.github.io))
-* Tomorrow:
-  * 14:00 - **17:00**: Use git to submit your thoughts on what you would like to work on during the course
-  * 16:00 - 16:30: Demo on how to use CodeGrade
-* Wednesday:
-  * 15:50 - 16:35: Discussion about the first exercise
-  * 16:50 - 17:20: Presentation about Git
-  * Rest of the day: self-study Bash tutorial, finish peer review  of the previous exercise by the end of the day
-
-Deadlines are always **hard**!
-
-## What we will do every two days
-
-* Monday & Wednesday (Wednesdays shifted 1.5 hours later):
-  * 14:00 – 14:45: 	Guest presentation and/or plenary discussion session about tutorial and exercise 
-  * 14:45 – 15:30:	Review of exercise from day before: feedback from the teachers, best solutions, and common mistakes; introduction to the tutorial of today 
-  * 15:30 – 17:10: 	Follow tutorial and answer questions (individually, self-study); finish peer review of exercise or assignment from the previous day 
-* Tuesday & Thursday:
-  * 14:00 – 17:00: 	Work on exercise (in pairs, teaching assistants available), submission via CodeGrade in Brightspace
-* Friday 14:00: assignments/project preparation work
+## Questions?
 
 ## Summary
 
@@ -244,13 +254,6 @@ Deadlines are always **hard**!
 * Deliverables are all practice, little theory!
 * Mind the deadlines, and don't forget to review others!
 
-## Learning outcomes of the rest of today and tomorrow:
-
-- Getting started with Linux, Git
-- Submit an exercise to CodeGrade!
-- Think of the project topic
-
-## Questions?
 
 <!--- What is a "reproducible script"?
 
@@ -268,7 +271,9 @@ if (!file.exists(fn <- "figs/worldcloudRpackage.png")) {
     require(RColorBrewer)
     u = "http://cran.r-project.org/web/packages/available_packages_by_date.html"
     t = readHTMLTable(u)[[1]]
-    ap.corpus <- Corpus(DataframeSource(data.frame(as.character(t[,3]))))
+    cdf = data.frame(text=as.character(t[,3]))
+    cdf$doc_id = 1:nrow(cdf)
+    ap.corpus <- Corpus(DataframeSource(cdf))
     ap.corpus <- tm_map(ap.corpus, removePunctuation)
     # ap.corpus <- tm_map(ap.corpus, tolower)
     #  txt.corpus <- tm_map(txt.corpus, tolower)

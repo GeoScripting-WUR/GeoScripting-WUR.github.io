@@ -48,11 +48,11 @@ We recommend refreshing your R and Python knowledge before the course with
 # Week 4
 #### [Tutorial 8: Python Environments](https://geoscripting-wur.github.io/pythonEnvs/)
 #### [Tutorial 9: Python Programming](https://geoscripting-wur.github.io/PythonProgramming/)
-#### Project proposal hand-in
+#### [Tutorial 10: Vector data handling with Python](https://geoscripting-wur.github.io/PythonVector/)
 
 # Week 5
-#### [Tutorial 10: Vector data handling with Python](https://geoscripting-wur.github.io/PythonVector/)
 #### [Tutorial 11: Raster data handling with Python](https://geoscripting-wur.github.io/PythonRaster/)
+#### Project proposal hand-in
 #### Assignment 2
 
 # Week 6 & 7
